@@ -1,6 +1,4 @@
 import React from 'react';
-import './Card.css';
-
 
 const Card=()=>{
     return(
@@ -19,6 +17,5 @@ const Card=()=>{
         </div>
     )
 }
-
 
 export default Card;
