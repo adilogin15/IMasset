@@ -1,0 +1,17 @@
+.body1{
+    position: absolute;
+    top:0;
+    z-index: -1;
+    height:60%;
+    width:99.8%;
+    display: flex;
+   border:1px solid white;
+   justify-content: center;
+}
+
+
+.backImage{
+    height:100%;
+    width:99.8%;
+    
+}

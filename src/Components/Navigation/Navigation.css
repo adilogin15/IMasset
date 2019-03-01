@@ -1,0 +1,47 @@
+.navMainContainer{
+	display: flex;
+	max-width: 100%;
+	padding:10px;
+	/* border:1px solid black; */
+}
+.navRightSection{
+	margin-left: auto;
+	/* border:1px solid red; */
+	display: flex;
+}
+.navItem{
+	padding:10px;
+	font-size:23px;
+	cursor: pointer;
+	color: beige;	
+}
+.navItem:hover{
+	transform: scale(1.2);
+}
+
+.headImage{
+	align-self: flex-start;
+	height:20%;
+	width:20%;
+	left:0;
+	padding:5px;
+}
+ @media all and (max-width: 650px){
+
+	.navMainContainer{
+		flex-flow: column wrap;
+		padding:2px;
+		
+	}
+	 .navItem{
+	
+		font-size: 15px;
+		padding: 0px;
+	} 
+	.navRightSection{
+		margin-left: 0;
+		border:1px solid red;
+		display: flex;
+		flex-flow: column;
+	}
+}
