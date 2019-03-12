@@ -21,7 +21,18 @@
             </nav>
         </div>
 
-        <div class="homewrapper sdbg"></div>
+        <div class="homewrapper sdbg">
+            <div class="subheadertext">
+                <h1>Autonomous Solution Demos and Workshops</h1>
+                <p>We designed a set of Autonomous solution demos and workshops based on real world customer experiences - addressing key business pain points including cost reduction , faster and better access to data, and new ways to predict optimal business outcomes. This single location provides you demo and workshop positioning, assets and where to get help. All with the goal to help you drive Autonomous demand and help your customers experience the benifits of autonomous cloud. </p>
+            </div>
+        </div>
+
+        <div class="cj card bg-primary text-white text-center p-3">
+            <blockquote class="blockquote mb-0">
+                    <p class="cloudjumpers"><a href="http://solutionengineering-devops.us.oracle.com/cj" target="_blank">Cloud Jumpers</a></p>
+            </blockquote>
+        </div>
 
         <div class="container mainContainer">
             <div class="cardsContainer">
@@ -352,7 +363,7 @@ function modalload(demo)
             $('.modal-content').css('overflow-y','scroll');
             $('.modal').css('top','0%');
             var span = document.getElementsByClassName("close")[0];
-            span.onclick = function() {modal.style.display = "none";}
+            span.onclick = function() {modal.style.display = "none";$(".modal-content").empty();}
             break;
         case "datamarketplace":
             $(".modal-content").empty();
