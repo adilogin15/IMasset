@@ -3,6 +3,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/app.css">
         <script src="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css"></script>
         <script src="stylesheet" type="text/css" href="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -10,9 +11,9 @@
                 <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
                 <div class="navRightSection">
                 <ul class="header">
-                    <li><p class="navItem"><a href="SolutionDemo.html">Solution Demos</a></p></li>
-                    <li><p class="navItem"><a href="SolutionWorkshops.html">Solution Workshops</a></p></li>
-                    <li><p class="navItem"><a href="RequestHelp.html">Request Help</a></p></li>
+                    <li><p class="navItem"><a class="SolutionDemo" href="SolutionDemo.html">Solution Demos</a></p></li>
+                    <li><p class="navItem"><a class="SolutionWorkshops" href="SolutionWorkshops.html">Solution Workshops</a></p></li>
+                    <li><p class="navItem"><a class="active RequestHelp" href="RequestHelp.html">Request Help</a></p></li>
                     <li><p><img src="assets/images/Notifications.png"></p></li>
                     <li><p><img src="assets/images/profile icon.png"></p></li>
                 </ul>							
@@ -22,11 +23,11 @@
 
         <div class="homewrapper sdrh"></div>
 
-        <div class="container mainContainer">
+        <div class="container mainContainer" style="margin-top: 13%;">
             <div class="cardsContainer">
-                <img id="scrm" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/scrm.png" alt="...">
-                <img id="mail" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/mail.png" alt="...">
-                <img id="slack" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/slack.png" alt="...">
+                <img id="scrm" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/scrm.png" onclick="hrefload(this)">
+                <img id="mail" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/mail.png" onclick="hrefload(this)">
+                <img id="slack" class="p-3 mb-5 bg-white rounded card-img-top1" src="assets/images/slack.png" onclick="hrefload(this)">
             </div>
         </div>
 
@@ -37,3 +38,30 @@
 
     </body>
 </html>
+<script>
+function hrefload(e)
+{
+    if(e.id == "scrm")
+    {
+        $("#scrm").attr('src','assets/images/scrmhover.png');
+        $("#mail").attr('src','assets/images/mail.png');
+        $("#slack").attr('src','assets/images/slack.png');
+        window.open('https://apex-fusioncrm.oraclecorp.com/apex/f?p=362:1:118582154691404::NO::P1_ENG_REPORT,P1_REFRESH_NOTIFICATIONS:,YES', '_blank');
+    }
+    else if(e.id == "mail")
+    {
+        $("#scrm").attr('src','assets/images/scrm.png');
+        $("#mail").attr('src','assets/images/mailhover.png');
+        $("#slack").attr('src','assets/images/slack.png');
+        location.href = "mailto:a.aditya.sharma@oracle.com";
+        window.open(location.href, '_blank');
+    }
+    else if(e.id == "slack")
+    {
+        $("#scrm").attr('src','assets/images/scrm.png');
+        $("#mail").attr('src','assets/images/mail.png');
+        $("#slack").attr('src','assets/images/slackhover.png');
+        window.open('https://sales-tech-div.slack.com/', '_blank');
+    } 
+}
+</script>
