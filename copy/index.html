@@ -1,0 +1,494 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="stylesheet" type="text/css" href="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/jquery-3.3.1.min.js"></script>
+      <title>Autonomous Solution Demos & Workshops</title>
+      <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md fixed-top">
+         <a class="navbar-brand" href="#">                
+         <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Solution Demos <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="SolutionWorkshops.html">Solution Workshops</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="RequestHelp.html">Request Help</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="./assets/images/tech.png" width="100%" />
+               <div class="container-fluid">
+                  <div class="col-md-12 carousel-caption text-left">
+                     <div class="col-md-8 float-left">
+                        <h1>Autonomous Solution Demos and Workshops</h1>
+                        <p>We designed a set of Autonomous solution demos and workshops based on real world customer experiences - addressing key business pain points including cost reduction , faster and better access to data, and new ways to predict optimal business outcomes. This single location provides you demo and workshop positioning, assets and where to get help. All with the goal of helping you drive Autonomous demand and helping your customers experience the benefits of autonomous cloud.</p>
+                     </div>
+                     <div class="col-md-4 float-right carouselBtn">
+                        <a class="btn btn-lg btn-primary" href="http://auto.us.oracle.com/cj/" role="button" target="_blank">Cloud Jumpers</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header section end -->
+      <div class="container-fluid marketing text-center">
+         <!-- Three columns of text below the carousel -->
+         <div class="row" id="autonomousCard">
+            <div class="col-lg-4">
+               <div class="card arrow_box active" id="autonomous" onclick="tabload(this)">
+                  <div class="card_img_cover">
+                     <img  src="./assets/images/Icon1.png" />
+                  </div>
+                  <h6 class="mt-2"> Autonomous Solution<br/> Demos</h6>
+               </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+               <div class="card" id="lob" onclick="tabload(this)">
+                  <div class="card_img_cover">
+                     <img  src="./assets/images/Icon2.png" />
+                  </div>
+                  <h6 class="mt-2">Line of Business<br/> Demos</h6>
+               </div>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+               <div class="card" id="industry" onclick="tabload(this)">
+                  <div class="card_img_cover">
+                     <img  src="./assets/images/Icon3.png" />
+                  </div>
+                  <h6 class="mt-2">Industry Demos</h6>
+               </div>
+            </div>
+            <!-- /.col-lg-4 -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <div class="container Autonomous-Technology" id="autonomousListing">
+         <h6 class="subsectionheadingautonomous py-2">Autonomous Technology Platform Demos(5)</h6>
+         <div class="row">
+            <div class="col-sm-4 mb-4">
+               <div class="card subsec" id="saasoprep" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/saasoprep.png" />
+                        <h5 class="card-title">SaaS Optimized Reporting</h5>
+                     </div>
+                     <div class="card-container">
+                        <p class="card-text small">There is no easier way to query and report on Oracle SaaS data than with Oracle Analytics Cloud (OAC) and Oracle Autonomous Database.</p>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="datamarketplace" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/datamarketplace.png" />
+                        <h5 class="card-title">Data Marketplace</h5>
+                     </div>
+                     <div class="card-container">
+                        <p class="card-text small">The easiest and most cost effective way to share and work with your data in a secure way in your organization.</p>
+                        <span class="float-right small">Available: March 15, 2019</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="departmentalreporting" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img src="./assets/images/departmentalreporting.png" />
+                        <h5 class="card-title">Departmental Reporting</h5>
+                     </div>
+                     <div class="card-container">
+                        <p class="card-text small">Use elastic scaling on-demand to spend your time making the business better, not waiting on reports to refresh.</p>
+                        <span class="float-right small">Available: March 15, 2019</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="predictionsandforecasting" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/predictionsandforecasting.png" />
+                        <h5 class="card-title">Predictions and Forecasting</h5>
+                     </div>
+                     <div class="card-container">
+                        <p class="card-text small">Empower your team to forecast your future by working with all your data using Machine Learning and Data Visualizer Cloud.</p>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="ITcostsavings" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/ITcostsavings.png" />
+                        <h5 class="card-title">IT Cost Savings</h5>
+                     </div>
+                     <div class="card-container">
+                        <p class="card-text small">Oracle Autonomous Database (ADB) is the best way to reduce overall data management operating expenditures while increasing quality of service.</p>
+                        <span class="float-right small">March 4, 2019</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container Autonomous-Technology lobListing hide" id="lobListing">
+         <h6 class="subsectionheadingautonomous py-2">Line of Business Demos(5)</h6>
+         <div class="row">
+            <div class="col-sm-4 mb-4">
+               <div class="card subsec" id="salesmanager" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/salesmanager.png" />
+                        <h5 class="card-title">Sales Manager</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="lobcontainer">
+                           <div><strong>Role: </strong>Showcasing the Sales related dashboards for Sales manager or VP of Sales.</div>
+                           <ul class="card-text">
+                              <li>Revenue &amp; Forecast Analytics</li>
+                              <li>Loss Analysis</li>
+                              <li>Competitive Analytics</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="hrmanager" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/hrmanager.png" />
+                        <h5 class="card-title">HR Manager</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="lobcontainer">
+                           <div><strong>Role: </strong>Showcasing the following analytics dashboards for a Human Resources Manager / Analyst.</div>
+                           <ul class="card-text">
+                              <li>Sourcing &amp; Quality of Hire</li>
+                              <li>Strategic Recruitment Effectiveness</li>
+                              <li>Attrition Modeling</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="financemanager" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/financemanager.png" />
+                        <h5 class="card-title">Finance Manager</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="lobcontainer">
+                           <div><strong>Role: </strong>Showcasing analytics dashboards relevant to a Finance Manager or finance specialist.</div>
+                           <ul class="card-text">
+                              <li>Cost Management &amp; Revenue Analysis</li>
+                              <li>AR Manager - Payment Performance, Transactions, Overdues, Dues</li>
+                              <li>AP Manager - Payment Performance, Balances, Holds, Dues</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="marketingmanager" >
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/marketingmanager.png" />
+                        <h5 class="card-title">Marketing Manager</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="lobcontainer">
+                           <div><strong>Role: </strong>Showcasing analytics dashboards for a Marketing Manager or Marketing Specialist.</div>
+                           <ul class="card-text">
+                              <li>Campaign Performance, Activities &amp; Cost</li>
+                           </ul>
+                           <span class="float-right small">Available: Now</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="procurementmanager">
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/procurementmanager.png" />
+                        <h5 class="card-title">Procurement Manager</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="lobcontainer">
+                           <div><strong>Role: </strong>Showcasing the procurement related dashboards, aimed at Head of Procurement or Procurement specialist.</div>
+                           <ul class="card-text">
+                              <li>Spend, Purchase Agreements, PO Analysis</li>
+                              <li>Supplier Risk Evaluation</li>
+                              <li>Spend Analysis</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container Autonomous-Technology industryListing hide" id="industryListing">
+         <h6 class="subsectionheadingautonomous py-2">Industry Demos(2)</h6>
+         <div class="row">
+            <div class="col-sm-4 mb-4">
+               <div class="card subsec" id="financialservices">
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/financialservices.png" />
+                        <h5 class="card-title">Financial Services</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="industrycontainer">
+                           <ul class="card-text">
+                              <li>Demo of OFSAA Data Hub integrated with Oracle Enterprise Data Lake</li>
+                              <li>Query data across the enterprise and report on it with OAC or other BI tools</li>
+                              <li>Reduce the cost of your OFSAA data lake</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Coming Soon</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4  mb-4">
+               <div class="card subsec" id="healthcare">
+                  <div class="row">
+                     <div class="imgCover">
+                        <img  src="./assets/images/healthcare.png" />
+                        <h5 class="card-title">Healthcare</h5>
+                     </div>
+                     <div class="card-container">
+                        <div class="industrycontainer">
+                           <ul class="card-text">
+                              <li>Demo of digital wearables to track exercise routines and other activities</li>
+                              <li>App that regularly monitors biometrics with links to Electronic Medical Records</li>
+                              <li>Showcases Oracle Autonomous Database, Internet of Things, and Mobile Cloud Service</li>
+                           </ul>
+                        </div>
+                        <span class="float-right small">Available: Now</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="container-fluid text-center">
+         <p class="float-right"><a href="#">Back to top</a></p>
+         <p>
+            <a href="#">NATD UCM Tenants Portal</a> | <a href="#">Contact Us</a><br>
+            <a href="#">Powered by Oracle Cloud Solution Hubs</a> | © Oracle Solution Engineering | <a href="#">Terms of Use and Privacy</a> | Confidential - Oracle Internal
+         </p>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal-backdrop hide" id="modal-backdrop"></div>
+      <div id="descmodal" class="modal">
+         <div class="modal-content"></div>
+      </div>
+
+      <div id="overlay" class="overlay hide"> </div>
+      
+   </body>
+   <script>
+      function tabload(e)
+      {
+         if(e.id == "autonomous")
+         {
+               document.getElementById("lob").classList.remove("arrow_box");
+               document.getElementById("lob").classList.remove("active");
+               document.getElementById("autonomous").classList.add("arrow_box");
+               document.getElementById("autonomous").classList.add("active");
+               document.getElementById("industry").classList.remove("arrow_box");
+               document.getElementById("industry").classList.remove("active"); 
+               document.getElementById("autonomousListing").classList.remove("hide");
+               document.getElementById("lobListing").classList.add("hide");
+               document.getElementById("industryListing").classList.add("hide");
+         }
+         else if(e.id == "lob")
+         {
+               document.getElementById("lob").classList.add("arrow_box");
+               document.getElementById("lob").classList.add("active");
+               document.getElementById("autonomous").classList.remove("arrow_box");
+               document.getElementById("autonomous").classList.remove("active");
+               document.getElementById("industry").classList.remove("arrow_box");
+               document.getElementById("industry").classList.remove("active");
+               document.getElementById("autonomousListing").classList.add("hide");
+               document.getElementById("lobListing").classList.remove("hide");
+               document.getElementById("industryListing").classList.add("hide");
+         }
+         else if(e.id == "industry")
+         {
+               document.getElementById("lob").classList.remove("arrow_box");
+               document.getElementById("lob").classList.remove("active");
+               document.getElementById("autonomous").classList.remove("arrow_box");
+               document.getElementById("autonomous").classList.remove("active");
+               document.getElementById("industry").classList.add("arrow_box");
+               document.getElementById("industry").classList.add("active"); 
+               document.getElementById("autonomousListing").classList.add("hide");
+               document.getElementById("lobListing").classList.add("hide");
+               document.getElementById("industryListing").classList.remove("hide");
+               
+         } 
+      }
+      $('.subsec').on( 'click',function () { 
+         modalload(this);
+      });
+      function modalload(demo)
+      {
+         var modal = document.getElementById('descmodal');
+         var btn = document.getElementById(demo.id);
+         btn.onclick = function() 
+         {
+            modal.style.display = "block";
+            document.getElementById("overlay").classList.remove("hide");
+         }
+         switch (demo.id) 
+         {
+            case "saasoprep":
+                  $(".modal-content").empty();
+            	  $(".modal-content").html("<span class='close'> <span class='times'>&times;</span></span><div class='modalbody'><br><br><iframe id='kmsembed-0_p86mmwjs' width='700' height='425' src='https://otube.oracle.com/embed/secure/iframe/entryId/0_p86mmwjs/uiConfId/43012852' class='kmsembed' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' frameborder='0' title='Kaltura Player'></iframe><br><div class='modalbody'><span><h2 class='mt-4'>SaaS Optimized Reporting</h2></span><span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><span class='detailsubheading'>Business Pain: </span><span class='detailstext'>I have so many SaaS products - how can I easily pull data out for analysis?</span><br><span class='detailsubheading'>Who to Target: </span><span class='detailstext'>LOB VP, Analysts, Enterprise Architect, IT/DBA Manager</span><br><span class='detailsubheading'>Products Used: </span><span class='detailstext'><a href='https://cloud.oracle.com/en_US/datawarehouse' target='_blank'>Oracle ADW</a>, <a href='https://cloud.oracle.com/en_US/oac' target='_blank'>Oracle Analytics Cloud</a>, <a href='https://cloud.oracle.com/erp-cloud' target='_blank'>Oracle ERP</a></span><br><span class='detailsubheading'>Average Initial Deal Size: </span><span class='detailstext'>$250,000 ARR</span><br><span class='detailsubheading'>Offer Kits: </span><span class='detailstext'><a href='https://salescentral.oracle.com/SalesCentral/faces/Details;jsessionid=XiNd4A8MEq3bORmALbDDn4RQP7so2TpM-8GWm5gbaiVdzZqXKrUR!359155796?offid=51422' target='_blank'>Line of Business</a>, <a href='https://salescentral.oracle.com/SalesCentral/faces/SCAsset?code=SCOfferingDetail&id=107878&type=OFFER_KIT' target='_blank'>IT/DBA Managers</a></span><br><span class='detailsubheading'>Reference Sell: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Customer Case Studies</a></span><br><span class='detailsubheading'>Value Proposition: </span><span class='detailstext'><ul><li>Fastest, easiest way to query and report on Oracle SaaS data</li><li>Built-in connectors mean there is no need for business users to wait for reports</li><li>Blending of multiple data sources with Oracle ADW, Oracle applications and third party SaaS provides detailed scenario modeling and visualization for better business results</li></ul></span><br><table class='demotable'><thead><tr><td>Asset</td><td>Link</td></tr></thead><tbody><tr><td>Business Video</td><td class='detailstexttd'><a href='https://otube.oracle.com/media/Enterprise+Resource+Planning/1_n67jim5d' target='_blank'>OTube Video</a></td></tr><tr><td>Reference Architecture</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/SaaS%20Optimized%20Reporting/Autonomous_SaaS%20Optimized%20Reporting_notional%20architecture.pptx' target='_blank'>PPT</a></td></tr><tr><td>Watch an SE Deliver the Demo</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/IT%20Cost%20Savings%20-%20Elastic%20Scaling/Demo%20Package/Auto_Scale_Click_Through_Demo.mp4' target='_blank'>Internal Video</a></td></tr><tr><td>For SEs - Demo Package (install, script, walkthrough)</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/teamcollab/library/st/NATD+Autonomous+Solution+Demos/Public+Documents/SaaS+Optimized+Reporting/Demo+Package' target='_blank'>Demo Package</a></td></tr><tr><td>For SEs - Hands-On Workshop</td><td class='detailstexttd'><a href='https://oracle.github.io/learning-library/workshops/erp-adw-oac/' target='_blank'>Github</a></td></tr></tbody></table></div></div>");
+                  $('.modal-content').css('height','95%');
+                  $('.modal-content').css('overflow-y','scroll');
+                  $('.modal').css('top','0%');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "datamarketplace":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><iframe id='kmsembed-0_p86mmwjs' width='700' height='425' src='https://otube.oracle.com/embed/secure/iframe/entryId/0_gsain1so/uiConfId/43012852' class='kmsembed' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' frameborder='0' title='Kaltura Player'></iframe><br><div class='modalbody'> <span><h2 class='mt-4'>Data Marketplace</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><span class='detailsubheading'>Business Pain: </span><span class='detailstext'>I don't own the data, but I need access to it to make critical business decisions.</span><br><span class='detailsubheading'>Who to Target: </span><span class='detailstext'>Citizen Data Scientists, LOB VP and Analysts, IT Managers</span><br><span class='detailsubheading'>Products Used: </span><span class='detailstext'><a href='https://cloud.oracle.com/en_US/datawarehouse' target='_blank'>Autonomous Data Warehouse</a>, <a href='https://cloud.oracle.com/storage/object-storage/features' target='_blank'>OCI Object Store</a>, <a href='https://cloud.oracle.com/en_US/data-integration-platform' target='_blank'>Data Integration Platform Cloud (DIPC)</a></span><br><span class='detailsubheading'>Average Initial Deal Size: </span><span class='detailstext'>$250,000 ARR</span><br><span class='detailsubheading'>Offer Kits: </span><span class='detailstext'><a href='https://salescentral.oracle.com/SalesCentral/faces/Details?offid=51422' target='_blank'>Line of Business</a></span><br><span class='detailsubheading'>Reference Sell: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Customer Case Studies</a></span><br><span class='detailsubheading'>Value Proposition: </span><br> <span class='detailstext'> <ul> <li>Self-service data access for business stakeholders</li><li>Easier and faster data access</li><li>Ability to explore data in more depth in their own environment</li><li>Empowers business users to make data-driven decisions and business process improvement</li></ul> </span><br><table class='demotable'> <thead><tr><td>Asset</td><td>Link</td></tr></thead> <tbody> <tr> <td>Internal Positioning Video</td><td class='detailstexttd'><a href='https://otube.oracle.com/media/Autonomous+Demo+2A+Autonomous+Data+Marketplace+Demo+(Use+caseA+Data+Sharing)/0_gsain1so' target='_blank'>OTube Video</a></td></tr><tr> <td>Business Video</td><td class='detailstexttd'><em>Coming soon - March 2019</em></td></tr><tr> <td>Reference Architecture</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/Data%20Marketplace/Autonomous_Data%20Marketplace_notional%20architecture.pptx' target='_blank'>PPT</a></td></tr><tr> <td>For SEs - Demo Package</td><td class='detailstexttd'><em>Coming soon - March 2019</em></td></tr><tr> <td>For SEs - Hands-On Workshop</td><td class='detailstexttd'><em>Coming soon - March 2019</em></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','95%');
+                  $('.modal-content').css('overflow-y','scroll');
+                  $('.modal').css('top','0%');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "departmentalreporting":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><iframe id='kmsembed-0_p86mmwjs' width='700' height='425' src='https://otube.oracle.com/embed/secure/iframe/entryId/0_p7xic3pw/uiConfId/43012852' class='kmsembed' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' frameborder='0' title='Kaltura Player'></iframe><br><div class='modalbody'> <span><h2 class='mt-4'>Departmental Reporting</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><span class='detailsubheading'>Business Pain: </span><span class='detailstext'>I am trying to create a visualization and the response speed is so slow.</span><br><span class='detailsubheading'>Who to Target: </span><span class='detailstext'>LOB VPs and Analysts including Marketing, Finance, Operations, Supply Chain</span><br><span class='detailsubheading'>Products Used: </span><span class='detailstext'><a href='https://cloud.oracle.com/en_US/datawarehouse' target='_blank'>Oracle Autonomous Data Warehouse</a>, <a href='https://cloud.oracle.com/en_US/oac' target='_blank'>Oracle Analytics Cloud</a></span><br><span class='detailsubheading'>Average Initial Deal Size: </span><span class='detailstext'>$100,000 ARR</span><br><span class='detailsubheading'>Offer Kits: </span><span class='detailstext'><a href='https://salescentral.oracle.com/SalesCentral/faces/Details?offid=51422' target='_blank'>Line of Business</a>, <a href='https://salescentral.oracle.com/SalesCentral/faces/SCAsset?code=SCOfferingDetail&id=107878&type=OFFER_KIT' target='_blank'>IT/DBA Managers</a></span><br><span class='detailsubheading'>Reference Sell: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Customer Case Studies</a></span><br><span class='detailsubheading'>Value Proposition: </span><br> <span class='detailstext'> <ul> <li>Quickly and easily scale up CPUs in the Autonomous Data Warehouse to optimize query speed and receive refreshed reports in seconds</li><li>High performance and fully on-line - users are able to query with no service interruptions</li><li>Built-in Analytics with interactive dashboards</li><li>Machine Learning for advanced insights and visualizations</li></ul> </span><br><table class='demotable'> <thead><tr><td>Asset</td><td>Link</td></tr></thead> <tbody><tr> <td>Business Video</td><td class='detailstexttd'><a href='https://video.oracle.com/detail/video/5758623251001' target='_blank'>Oracle Video Gallery</a></td></tr><tr> <td>Reference Architecture</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/Departmental%20Reporting/Autonomous_Dept%20Reporting_notional%20architecture.pptx' target='_blank'>PPT</a></td></tr><tr> <td>For SEs - Demo Package</td><td class='detailstexttd'><em>Coming soon - March 2019</em></td></tr><tr> <td>For SEs - Hands-On Workshop</td><td class='detailstexttd'><em>Coming soon - March 2019</em></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','95%');
+                  $('.modal-content').css('overflow-y','scroll');
+                  $('.modal').css('top','0%');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "predictionsandforecasting":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><iframe id='kmsembed-0_p86mmwjs' width='700' height='425' src='https://otube.oracle.com/embed/secure/iframe/entryId/0_2mqrtheb/uiConfId/43012852' class='kmsembed' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' frameborder='0' title='Kaltura Player'></iframe><br><div class='modalbody'> <span><h2 class='mt-4'>Predictions and Forecasting</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><span class='detailsubheading'>Business Pain: </span><span class='detailstext'>I am not technical, but I am looking or new ways to better predict outcomes.</span><br><span class='detailsubheading'>Who to Target: </span><span class='detailstext'>Citizen Data Scientist or LoB VP, Analysts (Marketing, Operations, Finance)</span><br><span class='detailsubheading'>Products Used: </span><span class='detailstext'><a href='https://cloud.oracle.com/en_US/datawarehouse' target='_blank'>Autonomous Database</a>, <a href='https://cloud.oracle.com/en_US/oac' target='_blank'>Oracle Analytics Cloud</a>, <a href='https://cloud.oracle.com/storage/object-storage/features' target='_blank'>OCI Object Store</a></span><br><span class='detailsubheading'>Average Initial Deal Size: </span><span class='detailstext'>$150,000 ARR</span><br><span class='detailsubheading'>Offer Kits: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Line of Business</a>, <a href='https://salescentral.oracle.com/SalesCentral/faces/SCAsset?code=SCOfferingDetail&id=107878&type=OFFER_KIT' target='_blank'>IT/DBA Managers</a></span><br><span class='detailsubheading'>Reference Sell: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Customer Case Studies</a></span><br><span class='detailsubheading'>Value Proposition: </span><br> <span class='detailstext'> <ul> <li>Drive innovation with rapid experimentation at reduced risk</li><li>Leapfrog competition by leveraging deeper insights from ALL data</li><li>Apply Machine Learning at scale to solve business problems - predict sales, prevent stock-outs, predict delays, prevent customer churn, predict maintenance</li><li>Optimize business by applying scientific methods that make complex decisions</li></ul> </span><br><table class='demotable'> <thead><tr><td>Asset</td><td>Link</td></tr></thead> <tbody><tr> <td>Business Video</td><td class='detailstexttd'><a href='https://otube.oracle.com/media/Demand+Prediction/1_lzg5m7ts/105282352' target='_blank'>OTube Video</a></td></tr><tr> <td>Reference Architecture</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/Predictions%20and%20Forecasting/Autonomous_Predictions%20and%20Forecasting_notional%20architecture.pptx' target='_blank'>PPT</a></td></tr><tr> <td>Watch an SE Deliver the Demo</td><td class='detailstexttd'><a href='https://otube.oracle.com/media/Bike+Share+Demo+(Machine+Learning)+-+Screen/1_krs9ytpc' target='_blank'>Internal Video</a></td></tr><tr> <td>For SEs - Demo Package (install, script, walkthrough)</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/teamcollab/library/st/NATD+Autonomous+Solution+Demos/Public+Documents/Predictions+and+Forecasting/Demo+Package' target='_blank'>Demo Package</a></td></tr><tr> <td>For SEs - Hands-On Workshop</td><td class='detailstexttd'><a href='https://oracle.github.io/learning-library/workshops/bike-share-prediction/' target='_blank'>Github</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','95%');
+                  $('.modal-content').css('overflow-y','scroll');
+                  $('.modal').css('top','0%');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "ITcostsavings":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><iframe id='kmsembed-0_p86mmwjs' width='700' height='425' src='https://otube.oracle.com/embed/secure/iframe/entryId/0_uuhh6g34/uiConfId/43012852' class='kmsembed' allowfullscreen webkitallowfullscreen mozAllowFullScreen allow='autoplay *; fullscreen *; encrypted-media *' frameborder='0' title='Kaltura Player'></iframe><br><div class='modalbody'> <span><h2 class='mt-4'>IT Cost Savings (Elastic Scaling)</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><span class='detailsubheading'>Business Pain: </span><span class='detailstext'>I am being asked to reduce the costs of our database needs.</span><br><span class='detailsubheading'>Who to Target: </span><span class='detailstext'>IT/DBA Managers, Procurement, Information Security</span><br><span class='detailsubheading'>Products Used: </span><span class='detailstext'><a href='https://cloud.oracle.com/en_US/datawarehouse' target='_blank'>Autonomous Database</a>, <a href='https://cloud.oracle.com/en_US/compute' target='_blank'>OCI Compute</a>, <a href='https://cloud.oracle.com/storage/object-storage/features' target='_blank'>OCI Object Store</a></span><br><span class='detailsubheading'>Average Initial Deal Size: </span><span class='detailstext'>$150,000 ARR</span><br><span class='detailsubheading'>Offer Kits: </span><span class='detailstext'><a href='https://salescentral.oracle.com/SalesCentral/faces/Details;jsessionid=XiNd4A8MEq3bORmALbDDn4RQP7so2TpM-8GWm5gbaiVdzZqXKrUR!359155796?offid=51422' target='_blank'>Line of Business</a>, <a href='https://salescentral.oracle.com/SalesCentral/faces/SCAsset?code=SCOfferingDetail&id=107878&type=OFFER_KIT' target='_blank'>IT/DBA Managers</a></span><br><span class='detailsubheading'>Reference Sell: </span><span class='detailstext'><a href='https://stbeehive.oracle.com/content/dav/st/DW%20Global%20Leaders/Public%20Documents/ADW_Customer_Presentations/ADW_Production_Case_Studies.pptx' target='_blank'>Customer Case Studies</a></span><br><span class='detailsubheading'>Value Proposition: </span><br> <span class='detailstext'> <ul> <li>Automatically adapts to changing workloads</li><li>No disruption to applications</li><li>Shut off idle compute for significant cost savings</li><li>Always latest patching reducing compliance drift which is the #1 cause of data breaches</li></ul> </span><br><table class='demotable'> <thead><tr><td>Asset</td><td>Link</td></tr></thead> <tbody><tr> <td>Business Video</td><td class='detailstexttd'><em>Coming Soon</em></td></tr><tr> <td>Reference Architecture</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/IT%20Cost%20Savings%20-%20Elastic%20Scaling/Autonomous_IT%20Cost%20Savings_notional%20architecture.pptx' target='_blank'>PPT</a></td></tr><tr> <td>Watch an SE Deliver the Demo</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/content/dav/st/NATD%20Autonomous%20Solution%20Demos/Public%20Documents/IT%20Cost%20Savings%20-%20Elastic%20Scaling/Demo%20Package/Auto_Scale_Click_Through_Demo.mp4' target='_blank'>Internal Video</a></td></tr><tr> <td>For SEs - Demo Package (install, script, walkthrough)</td><td class='detailstexttd'><a href='https://stbeehive.oracle.com/teamcollab/library/st/NATD+Autonomous+Solution+Demos/Public+Documents/IT+Cost+Savings+-+Elastic+Scaling/Demo+Package' target='_blank'>Demo Package</a> and <a href='http://oracledatagroup.com/ords/f?p=100:10:::NO:::' target='_blank'>Demo Site</a></td></tr><tr> <td>For SEs - Hands-On Workshop</td><td class='detailstexttd'><a href='https://oracle.github.io/learning-library/workshops/auto-scale-adwc/auto-scale-adwc/?page=README.md' target='_blank'>Github</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','95%');
+                  $('.modal-content').css('overflow-y','scroll');
+                  $('.modal').css('top','0%');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+               case "salesmanager":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><div class='modalbody'> <span><h2 class='mt-4'>Sales Manager</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><table class='demotable'> <thead><tr><td>Name</td><td>Format</td><td>Industry</td><td>Dashboard</td></tr></thead> <tbody> <tr> <td colspan='1'>Overview PPT</td><td colspan='1'>Coming Soon</td><td rowspan='6'>Generic</td><td rowspan='6'> <ol class='salesm'> <li>Sales Team Performance</li><li>Sales Review</li><li>Product Line Revenue Trend</li><li>Pipeline Trend YoY</li><li>Competitive Analysis</li><li>Top Deals in Play</li></ol> </td></tr><tr> <td colspan='1'>Canned Demo with Script</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/office/view/D44AEF60215EA25C9BBD2C70F6C3FF17C1177A968060' target='_blank'>PPT</a></td></tr><tr> <td colspan='1'>Demo Script Explanation</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LDF0625801231C3D6E81133EF6C3FF17C1177A968060/fileview/DF6E00299B3F1F4FB6F57169F6C3FF17C1177A968060/_Sales_Analytics.mp4' target='_blank'>MP4</a></td></tr><tr> <td colspan='1'>Data Visualization Project for Live Demo</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LDF0625801231C3D6E81133EF6C3FF17C1177A968060/fileview/DF6E00299B3F1F4FB6F57169F6C3FF17C1177A968060/_Sales_Analytics.mp4' target='_blank'>DVA</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','69%');
+                  $('.modal-content').css('overflow-y','auto');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "hrmanager":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><div class='modalbody'> <span><h2 class='mt-4'>HR Manager</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><table class='demotable'> <thead><tr><td>Name</td><td>Format</td><td>Industry</td><td>Dashboard</td></tr></thead> <tbody> <tr> <td colspan='1'>Overview PPT</td><td colspan='1'>Coming Soon</td><td rowspan='6'>Generic</td><td rowspan='6'> <ol class='hrm'> <li>Best Source of Hire - Taleo Extract</li><li>Naive Bayes Apply - Attrition Analysis</li><li>Recruitment Analysis Demo</li><li>Recruitment EEO - Taleo Extract</li></ol> </td></tr><tr> <td colspan='1'>Canned Demo with Script</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/office/view/D4C329F977A1FFFDFFA080FAF6C3FF17C1177A968060' target='_blank'>PPT</a></td></tr><tr> <td colspan='1'>Demo Script Explanation</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD09A99294B3B7BC7F4647D1F6C3FF17C1177A968060/fileview/DEC5BD1A31A5649FB61A740DF6C3FF17C1177A968060/_HR_Analytics.mp4' target='_blank'>MP4</a></td></tr><tr> <td colspan='1'>Data Visualization Project for Live Demo</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD91F5F28A534AC09017D9EEF6C3FF17C1177A968060/file/D642486D2D4AB590F54E0FEEF6C3FF17C1177A968060/_HR_Analytics.dva' target='_blank'>DVA</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','65%');
+                  $('.modal-content').css('overflow-y','auto');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "financemanager":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><div class='modalbody'> <span><h2 class='mt-4'>Finance Manager</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><table class='demotable'> <thead><tr><td>Name</td><td>Format</td><td>Industry</td><td>Dashboard</td></tr></thead> <tbody> <tr> <td colspan='1'>Overview PPT</td><td colspan='1'>Coming Soon</td><td rowspan='6'>Generic</td><td rowspan='6'> <ol class='fm'> <li>Revenue Review</li><li>Revenue and Headcount Analysis</li><li>Revenue and Headcount</li><li>Cost Management Analysis</li></ol> </td></tr><tr> <td colspan='1'>Canned Demo with Script</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/office/view/D1FEBC0F7EE12AC22FC22A19F6C3FF17C1177A968060' target='_blank'>PPT</a></td></tr><tr> <td colspan='1'>Demo Script Explanation</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD016DFAD44B94D21205D7D2F6C3FF17C1177A968060/fileview/D4C33B5779D8D632B9BC7F8BF6C3FF17C1177A968060/_Financial_Analytics.mp4' target='_blank'>MP4</a></td></tr><tr> <td colspan='1'>Data Visualization Project for Live Demo</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD0D8955F0E37C71BCBB575DF6C3FF17C1177A968060/file/D49E9DCC45DAA0E6588D3A5BF6C3FF17C1177A968060/_Finance_Manager.dva' target='_blank'>DVA</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','65%');
+                  $('.modal-content').css('overflow-y','auto');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "marketingmanager":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><br><br><div class='modalbody'> <span><h2 class='mt-4'>Marketing Manager</h2></span> <span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><div style='clear: left;'/><br><table class='demotable'> <thead><tr><td>Name</td><td>Format</td><td>Industry</td><td>Dashboard</td></tr></thead> <tbody> <tr> <td colspan='1'>Overview PPT</td><td colspan='1'>Coming Soon</td><td rowspan='6'>Generic</td><td rowspan='6'> <ol class='mm'> <li>Campaign Performance Review</li><li>Campaign Performance Analyzer</li><li>Campaign Cost Review</li><li>Campaign Cost Analyzer</li><li>Campaign Activity Trends</li></ol> </td></tr><tr> <td colspan='1'>Canned Demo with Script</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/office/view/D3780B3FCE69124A204457BDF6C3FF17C1177A968060' target='_blank'>PPT</a></td></tr><tr> <td colspan='1'>Demo Script Explanation</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD1C004200278A049C226DAFF6C3FF17C1177A968060/fileview/D1E7D4CD819F854C7B9DA1BEF6C3FF17C1177A968060/_Campaign_Analytics.mp4' target='_blank'>MP4</a></td></tr><tr> <td colspan='1'>Data Visualization Project for Live Demo</td><td colspan='1'><a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LD5B7C5FF4A0E2335FC96C10F6C3FF17C1177A968060/file/D552EFCFFF6CF7AE9E4F385AF6C3FF17C1177A968060/_Marketing_Analyst.dva' target='_blank'>DVA</a></td></tr></tbody> </table> </div></div>");
+                  $('.modal-content').css('height','65%');
+                  $('.modal-content').css('overflow-y','auto');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "procurementmanager":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><span><h2 class='mt-4'>Procurement Manager</h2></span><span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><br><h1 style='text-align: center;'>Coming Soon</h1></div>");
+                  $('.modal-content').css('height','30%');
+                  $('.modal-content').css('overflow-y','unset');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "financialservices":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><span><h2 class='mt-4'>Financial Services</h2></span><span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><br><h1 style='text-align: center;'>Coming Soon</h1></div>");
+                  $('.modal-content').css('height','30%');
+                  $('.modal-content').css('overflow-y','unset');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+            case "healthcare":
+                  $(".modal-content").empty();
+                  $(".modal-content").html("<span class='close'><span class='times'>&times;</span></span><div class='modalbody'><span><h2 class='mt-4'>Healthcare</h2></span><span class='mt-4'><img src='assets/images/information.png' alt='Request Help'><a href='RequestHelp.html'><h4>Request Help</h4></a></span><br><h1 style='text-align: center;'>Coming Soon</h1></div>");
+                  $('.modal-content').css('height','30%');
+                  $('.modal-content').css('overflow-y','unset');
+                  $('.modal').attr('style','top:20%!important');
+                  var span = document.getElementsByClassName("close")[0];
+                  span.onclick = function() {modal.style.display = "none";document.getElementById("overlay").classList.add("hide");}
+                  break;
+         }
+      }
+   </script>
+</html>

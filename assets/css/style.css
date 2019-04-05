@@ -1,0 +1,400 @@
+.navbar-expand-md .navbar-nav .nav-item a{
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom:2px solid transparent;
+  margin-left: 20px;
+}
+.navbar-expand-md .navbar-nav .nav-item a:hover{
+  border-bottom:2px solid #fff;
+}
+.navbar-expand-md .navbar-nav .nav-item .active{
+  border-bottom:2px solid #fff;
+}
+
+.carousel-item .carousel-caption{
+  left:2%;
+  bottom: 25%;
+}
+.carousel-item{
+  height: 510px;
+}
+.carousel-item-requesthelp{
+  height: 440px;
+}
+.carouselBtn{
+  position: relative;
+  top:100px;
+}
+.carouselBtn .btn-primary {
+  background: #fff;
+  /* position: absolute; */
+  color: RED;
+  height: 50px;
+  font-size: 18px;
+  width: 180px;
+  line-height: 30px;
+  float: right;
+}
+.carouselBtn .btn-primary:hover {
+  background: RED;
+  color: #fff;
+  border:1px solid RED;
+}
+.marketing{
+  max-width: 900px;
+  margin-top: -90px;
+  margin-bottom: 30px;
+}
+.marketinghelp{
+    min-height: 117px;
+}
+img{max-width: 100%;}
+
+ /* ----------- iPad ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+  .carousel-item>img{max-width: 100%;
+    height: fit-content;}
+    .carousel-item .carousel-caption {
+      left: 2%;
+      bottom: 15%;
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .carousel-item>img{max-width: 100%;
+      height: fit-content;}
+      .carousel-item .carousel-caption {
+        left: 2%;
+        bottom: 15%;
+    }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .carousel-item>img{max-width: 100%;
+      height: fit-content;}
+      .carousel-item .carousel-caption {
+        left: 2%;
+        bottom: 15%;
+    }
+}
+.subsec{
+  cursor:pointer!important;
+}
+.marketing .card{
+  padding: 15px;
+  min-height: 230px;
+}
+.marketing .card.active{
+  background: #EFF9FF;
+}
+.marketing .card:hover{
+  background: #EFF9FF;
+}
+.marketing .card img{
+    max-width: 60%;
+    margin: 0px auto;
+}
+.imgCover{
+  position: relative;
+}
+.imgCover img{
+  min-height: 250px;
+}
+.imgCover>.card-title, .imgCover>.card-title>a{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  background:rgba(0,0,0,0.5);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom:0;
+  left: 0;
+}
+.card-container{
+  padding:15px;
+}
+ /* ----------- iPad ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+  .lobcontainer {
+    min-height: 241px!important;
+  }
+} */
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .lobcontainer {
+      min-height: 241px!important;
+  }
+} */
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .lobcontainer {
+      min-height: 241px!important;
+  }
+} */
+
+.lobcontainer{
+  min-height: 200px;
+}
+
+.industrycontainer{
+  min-height: 360px;
+}
+
+.Autonomous-Technology{
+  margin-top: 50px;
+}
+.Autonomous-Technology .card{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer{
+  background: #324B5C;
+  padding:25px;
+  color:#99bbcb;
+}
+footer a{ 
+  color:#99bbcb;
+}
+footer a:hover{ 
+  color:#99bbcb;
+}
+.fixed-top{
+  background:rgba(0,0,0,0.7);
+  /* background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0, 0, 0, 0)); */
+}
+
+/*Arrow css*/
+.arrow_box {
+	position: relative;
+	background: #EFF9FF;
+	border: 4px solid #EFF9FF;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(239, 249, 255, 0);
+	border-top-color: #EFF9FF;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.arrow_box:before {
+	border-color: rgba(239, 249, 255, 0);
+	border-top-color: #EFF9FF;
+	border-width: 26px;
+	margin-left: -26px;
+}
+.hide{
+  display:none !important;
+}
+
+
+/*Modal*/
+/* The Modal (background) */
+.modal {
+ font-weight:normal;
+  position: fixed !important; /* Stay in place */
+  z-index: 9999 !important; /* Sit on top */
+  left: 0 !important;
+  top: 0 !important;
+  width: 750px !important;
+  /* width: 1100px !important; */
+  /* width: 60%; Full width */
+  height: 100% !important; /* Full height */
+  margin: 0 auto !important;
+  /* left: 20%; */
+  left: 15% !important;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #343434 !important;
+  color: #FFFFFF;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow-y: scroll;
+  height: 95%;
+}
+
+/* Modal Content has hcare*/
+.modal-content:has(#fservices) , .modal-content:has(#hcare){
+  background-color: #343434;
+  color: #FFFFFF;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow-y: scroll;
+  height: 25%;
+}
+/* The Close Button */
+.close {
+  text-align:right;
+}
+.close>.times {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.detailsubheading{
+  font-weight: bold;
+  color:#CACACA;
+  margin-right: 1%;
+}
+.detailstext{
+  color:#A3A3A3;
+}
+.detailstext a{
+  color:#3F82A8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal-content> .demotable >thead{
+  background: #464646;
+  color: #CACACA;
+}
+.demotable {
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* .demotable>thead>tr>.detailsubheading{
+  border: 0px;
+  border-radius: 5px;
+  width: 100%;
+  border-collapse: unset;
+  color: #CACACA;
+} */
+.demotable>tbody>.detailsubheading{
+  border: 0px!important;
+  border-radius: 5px!important;
+  width: 100%!important;
+  color: #CACACA!important;
+}
+.demotable>tbody>tr>.detailstexttd>a{
+  border: 0px!important;
+  border-radius: 5px!important;
+  width: 100%!important;
+  border-collapse: unset!important;
+  color: #3F82A8!important;
+  text-decoration: none!important;
+  cursor: pointer;
+}
+.demotable>tbody>tr>td:nth-child(1) , .demotable>tbody>tr>td:nth-child(2), .demotable>tbody>tr>td:nth-child(3), .demotable>tbody>tr>td:nth-child(4){
+  font-weight: bold;
+  color: #CACACA;
+  border-right: 0px!important;
+}
+.demotable>thead>tr>td:nth-child(1) , .demotable>thead>tr>td:nth-child(2), .demotable>tbody>tr>td:nth-child(3), .demotable>tbody>tr>td:nth-child(4){
+  /* font-weight: bold; */
+  border-right: 0px!important;
+}
+.demotable>thead>tr>td {
+  padding: 10px;
+  border-right: 0px;
+}
+
+.demotable>thead{
+  /* font-weight: bold; */
+  color: #BFBFBF;
+  background: #464646;
+}
+.demotable>tbody>tr>td>.salesm,.demotable>tbody>tr>td>.hrm,.demotable>tbody>tr>td>.fm,.demotable>tbody>tr>td>.mm{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.demotable>tbody>tr>td>.salesm>li{
+  margin: 2.5px;
+}
+.demotable>tbody>tr>td>.hrm>li , .demotable>tbody>tr>td>.fm>li{
+  margin: 12px;
+}
+.demotable>tbody>tr>td>.mm>li{
+  margin: 8px;
+}
+.demotable>tbody>tr{
+  border-bottom: 0px;
+}
+.modalbody>span{
+display: inline-block;
+}
+.modalbody>span:nth-child(2){
+  float:right;
+  /* display: inline-block; */
+}
+.modalbody>span:nth-child(2)>a , .modalbody>span:nth-child(2)>a:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.modalbody>span:nth-child(2)>img{
+  vertical-align: middle;
+  margin: 0 10;
+}
+.modalbody>span:nth-child(2)>a>h4{
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity:0.5;
+ }
