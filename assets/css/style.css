@@ -11,7 +11,56 @@
 .navbar-expand-md .navbar-nav .nav-item .active{
   border-bottom:2px solid #fff;
 }
+.navwbg{
+  color:#ffffff!important;
+}
+.details{
+padding:20px 50px!important;
+}
 
+.detailstexts{
+  padding: 0rem 1rem;
+}
+.detailstextsvp{
+  padding: 0rem 1.2rem;
+  margin-bottom: 5px
+}
+.valueprop{
+  list-style-type: circle;
+  padding-left: 45px;
+  margin-bottom: 4rem;
+}
+.reqhelp{
+  padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+.reqhelp>span>a , .reqhelp>span>a:hover{
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #ffffff!important;
+  border-radius: .25rem;
+}
+.breadcrumb-item>a , .breadcrumb-item.active {
+  color: #000!important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .5rem;
+  color: #000;
+  content: ">"!important;
+}
 .carousel-item .carousel-caption{
   left:2%;
   bottom: 25%;
@@ -47,7 +96,8 @@
   margin-bottom: 30px;
 }
 .marketinghelp{
-    min-height: 117px;
+    /* min-height: 117px; */
+    min-height: 149px;
 }
 img{max-width: 100%;}
 
@@ -181,11 +231,14 @@ and (max-device-width: 1024px) {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.float-right>a{
+  color: #99bbcb;
+}
 footer{
   background: #324B5C;
   padding:25px;
   color:#99bbcb;
+  bottom: 0;
 }
 footer a{ 
   color:#99bbcb;
@@ -304,6 +357,38 @@ footer a:hover{
 .modal-content> .demotable >thead{
   background: #464646;
   color: #CACACA;
+}
+.detailstable{
+  border-collapse: unset;
+  padding: 0rem 1rem;
+}
+.detailstable>tbody>tr>td>a{
+text-decoration: underline;
+}
+.detailstable>thead>tr>td{
+  font-size: 22px;
+  font-weight: bold;
+}
+.detailstable>thead>tr>td:nth-child(1){
+  width: 414px;
+}
+.detailstable>tbody>tr>td:nth-child(2),.detailstable>thead>tr>td:nth-child(2){
+  padding: 0 0 0 15px;
+}
+.detailstable>thead>tr>td:after {
+  content: "";
+  display: block;
+  padding-top: 2px;
+  border-bottom: 2px solid red;
+}
+.detailstable>thead>tr>td:nth-child(1):after {
+  width: 60px;
+}
+.detailstable>thead>tr>td:nth-child(2):after {
+  width: 47px;
+}
+.detailstable>thead>tr>.targethead:after {
+  width: 410px!important;
 }
 .demotable {
   border: 0px;
