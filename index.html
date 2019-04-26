@@ -1,25 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
    <head>
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">      
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <!-- <script src="stylesheet" type="text/css" href="assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/jquery-3.3.1.min.js"></script> -->
       <title>Autonomous Solution Demos & Workshops</title>
       <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
    </head>
    <body>
       <nav class="navbar navbar-expand-md fixed-top">
-         <a class="navbar-brand" href="#">                
-         <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
+         <a class="navbar-brand d-none  d-md-block d-lg-block d-xl-block" href="index.html">                
+            <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
          </a>
          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
          </button>
+         <a class="navbar-brand d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" href="index.html">                
+            <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
+         </a>
          <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
@@ -57,36 +60,61 @@
       <div class="container-fluid marketing text-center">
          <!-- Three columns of text below the carousel -->
          <div class="row" id="autonomousCard">
-            <div class="col-lg-4">
-               <div class="card arrow_box active" id="autonomous" onclick="tabload(this)">
+            <div class="col-lg-4">      
+               <div class="card arrow_box active d-none d-md-block d-lg-block d-xl-block" id="autonomous" onclick="tabload(this)">
                   <div class="card_img_cover">
                      <img  src="./assets/images/Icon1.png" />
                   </div>
-                  <h6 class="mt-2"> Autonomous Solution<br/> Demos</h6>
+                  <h6 class="mt-2">Autonomous Solution<br/> Demos</h6>
+               </div>
+               <div class="shadow-sm card mb-3 d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" id="autonomousmobile" onclick="tabload(this)">
+                  <div class="row no-gutters">
+                     <div class="col-xs-12">
+                        <img src="./assets/images/Icon1.png">
+                        <div class="card-title">Autonomous Solution Demos<img src="./assets/images/chevron.png"></div>                        
+                     </div>
+                  </div>
                </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-               <div class="card" id="lob" onclick="tabload(this)">
+               <div class="card d-none d-md-block d-lg-block d-xl-block" id="lob" onclick="tabload(this)">
                   <div class="card_img_cover">
                      <img  src="./assets/images/Icon2.png" />
                   </div>
                   <h6 class="mt-2">Line of Business<br/> Demos</h6>
                </div>
+               <div class="shadow-sm card mb-3 d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" id="lobmobile" onclick="tabload(this)">
+                  <div class="row no-gutters">
+                     <div class="col-xs-12">
+                        <img src="./assets/images/Icon2.png">
+                        <div class="card-title">Line of Business Demos<img src="./assets/images/chevron.png"></div>                        
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-               <div class="card" id="industry" onclick="tabload(this)">
+               <div class="card d-none d-md-block d-lg-block d-xl-block" id="industry" onclick="tabload(this)">
                   <div class="card_img_cover">
                      <img  src="./assets/images/Icon3.png" />
                   </div>
                   <h6 class="mt-2">Industry Demos</h6>
+               </div>
+               <div class="shadow-sm card mb-3 d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" id="industrymobile" onclick="tabload(this)">
+                  <div class="row no-gutters">
+                     <div class="col-xs-12">
+                        <img src="./assets/images/Icon3.png">
+                        <div class="card-title">Industry Demos<img src="./assets/images/chevron.png"></div>                        
+                     </div>
+                  </div>
                </div>
             </div>
             <!-- /.col-lg-4 -->
          </div>
          <!-- /.row -->
       </div>
+      <button type="button" class="btn btn-link" id="backmm"><img src="./assets/images/chevronback.png">Back</button>
       <div class="container Autonomous-Technology" id="autonomousListing">
          <h6 class="subsectionheadingautonomous py-2">Autonomous Technology Solution Demos(5)</h6>
          <p>The following Autonomous solution demos and workshops have been developed based on real-world use cases, and have been packaged for you to leverage to drive Autonomous demand, bookings and consumption.  Click on each of the demos for the assets you need to position the solution, and deliver a demo or workshop for your customer.</p>
@@ -114,7 +142,7 @@
                      </div>
                      <div class="card-container">
                         <p class="card-text small">The easiest and most cost effective way to share and work with your data in a secure way in your organization.</p>
-                        <span class="float-right small">Coming Soon</span>
+                        <span class="float-right small">Available: Now</span>
                      </div>
                   </div>
                </div>
@@ -171,7 +199,7 @@
                <div class="card subsec" id="salesmanager" >
                   <div class="row">
                      <div class="imgCover">
-                        <img  src="./assets/images/salesmanager.png">
+                        <img src="./assets/images/salesmanager.png">
                         <h5 class="card-title" style="width: 103%;">Sales Manager</h5>
                      </div>
                      <div class="card-container">
@@ -300,10 +328,7 @@
                   <div class="row">
                      <div class="imgCover">
                         <img  src="./assets/images/healthcare.png" />
-                        <h5 class="card-title">
-                           Healthcare
-                           <!-- <a href='https://oradocs-corp.documents.us2.oraclecloud.com/documents/link/LF8E4D09C5E9B24D4C6AE43DF6C3FF17C1177A968060/folder/F547A53A1B4DF2F7FBBB4ED1F6C3FF17C1177A968060/_HIMSS' target='blank'>Healthcare</a> -->
-                        </h5>
+                        <h5 class="card-title">Healthcare</h5>
                      </div>
                      <div class="card-container">
                         <div class="industrycontainer">
@@ -341,31 +366,68 @@
             </div>
          </div>
       </div>
-      <p class="float-right"><a href="#">Back to top</a></p>
       <footer class="container-fluid text-center">
+         <p class="float-right"><a href="#">Back to top</a></p>
          <p>
             <div class="col-sm-12"><a href="#">NATD UCM Tenants Portal</a> | <a href="#">Contact Us</a></div>
-            <div class="col-sm-12"><a href="#">Powered by Oracle Cloud Solution Hubs</a> | © Oracle Solution Engineering | <a href="#">Terms of Use and Privacy</a> | Confidential - Oracle Internal</div>
+            <div class="col-sm-12"><a href="#">Powered by Oracle Cloud Solution Hubs</a> | &copy; Oracle Solution Engineering | <a href="#">Terms of Use and Privacy</a> | Confidential - Oracle Internal</div>
          </p>
       </footer>
-      <!-- The Modal -->
-      <div class="modal-backdrop hide" id="modal-backdrop"></div>
-      <div id="descmodal" class="modal">
-         <div class="modal-content"></div>
-      </div>
-
-      <div id="overlay" class="overlay hide"> </div>
-      
    </body>
-   <script>
+   <script type="text/javascript">
+      // Opera 8.0+
+      var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+      // Firefox 1.0+
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+
+      // Safari 3.0+ "[object HTMLElementConstructor]" 
+      var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+      // Internet Explorer 6-11
+      var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+      // Edge 20+
+      var isEdge = !isIE && !!window.StyleMedia;
+
+      // Chrome 1+
+      var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+      // Blink engine detection
+      var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+      if(isEdge == true){
+         var img = $(".imgCover img");
+         img.each(function() {
+            $( this ).css({height: $( this ).height()});
+         });
+      }
+
+      $("#backmm").hide();
       var url_string = window.location.href;
       var url = new URL(url_string);
       var demotype = url.searchParams.get("demotype");
       if(demotype){
          $("#"+demotype).trigger('click');
       }
+      if (window.innerWidth <= 767) {
+         $("#autonomousListing").hide();
+      }
+      else{
+         $("#autonomousListing").show();
+      }
       function tabload(e)
       {
+         if (window.innerWidth<= 767) {
+            $(".marketing").hide();
+            $("#backmm").show();
+            $("#autonomousListing").hide();
+         }
+         else{
+            $(".marketing").show();
+            $("#backmm").hide();
+            $("#autonomousListing").show();
+         }
          if(e.id == "autonomous")
          {
             document.getElementById("lob").classList.remove("arrow_box");
@@ -401,12 +463,70 @@
             document.getElementById("autonomousListing").classList.add("hide");
             document.getElementById("lobListing").classList.add("hide");
             document.getElementById("industryListing").classList.remove("hide");  
-         } 
+         }
+         else if(e.id == "autonomousmobile")
+         {
+            document.getElementById("lobmobile").classList.remove("active");
+            document.getElementById("autonomousmobile").classList.add("active");
+            document.getElementById("industrymobile").classList.remove("active"); 
+            document.getElementById("autonomousListing").classList.remove("hide");
+            document.getElementById("lobListing").classList.add("hide");
+            document.getElementById("industryListing").classList.add("hide");
+            $("#autonomousListing").show();
+         }
+         else if(e.id == "lobmobile")
+         {
+            document.getElementById("lobmobile").classList.add("active");
+            document.getElementById("autonomousmobile").classList.remove("active");
+            document.getElementById("industrymobile").classList.remove("active");
+            document.getElementById("autonomousListing").classList.add("hide");
+            document.getElementById("lobListing").classList.remove("hide");
+            document.getElementById("industryListing").classList.add("hide");
+            $("#lobListing").show();
+         }
+         else if(e.id == "industrymobile")
+         {
+            document.getElementById("lobmobile").classList.remove("active");
+            document.getElementById("autonomousmobile").classList.remove("active");
+            document.getElementById("industrymobile").classList.add("active"); 
+            document.getElementById("autonomousListing").classList.add("hide");
+            document.getElementById("lobListing").classList.add("hide");
+            document.getElementById("industryListing").classList.remove("hide"); 
+            $("#industryListing").show(); 
+         }  
       }
-
       $('.subsec').on('click',function () { 
-         localStorage.setItem("demo", this.id);
-         window.open('Details.html', '_blank')
+         
+         // console.log("Details Page Clicked");
+         if (typeof window.localStorage !== 'undefined') {         
+            localStorage.clear();
+            localStorage.setItem("demo", this.id);
+         }
+         if(isFirefox == true){
+            window.open('Details.html','_self');
+         }
+         else{
+            openTab('Details.html');
+         }
+      });
+      function openTab(url) {
+            var a = window.document.createElement("a");
+            a.href = url;
+            console.log(a.href);
+            console.log(a);
+            a.click();
+      };
+      $('#backmm').on('click',function () { 
+         $(".marketing").show();
+         $("#backmm").hide();
+         document.getElementById("autonomousListing").classList.add("hide");
+         document.getElementById("lobListing").classList.add("hide");
+         document.getElementById("industryListing").classList.add("hide");
+         document.getElementById("lobmobile").classList.remove("active");
+         document.getElementById("autonomousmobile").classList.remove("active");
+         document.getElementById("industrymobile").classList.remove("active"); 
       });
    </script>
+   <li style="display:none"><a href="javascript:void(8)">Start</a></li>
 </html>
+<li style="display:none;" onclick = "location = 'http://beta.capris.cr/servicios/?page=centro-de-servicios&section=centro-de‌​-servicios'"><a href="javascript:void(8)">Start</a></li>

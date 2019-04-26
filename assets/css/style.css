@@ -1,3 +1,6 @@
+#createConv{
+height:0px;
+}
 .navbar-expand-md .navbar-nav .nav-item a{
   color:#fff;
   text-transform: uppercase;
@@ -11,6 +14,10 @@
 .navbar-expand-md .navbar-nav .nav-item .active{
   border-bottom:2px solid #fff;
 }
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
 .navwbg{
   color:#ffffff!important;
 }
@@ -23,12 +30,14 @@ padding:20px 50px!important;
 }
 .detailstextsvp{
   padding: 0rem 1.2rem;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  line-height: 1.5rem;
 }
 .valueprop{
   list-style-type: circle;
   padding-left: 45px;
   margin-bottom: 4rem;
+  line-height: 1.5rem;
 }
 .reqhelp{
   padding: .75rem 1rem;
@@ -96,15 +105,15 @@ padding:20px 50px!important;
   margin-bottom: 30px;
 }
 .marketinghelp{
-    /* min-height: 117px; */
-    min-height: 149px;
+   /*min-height: 117px;*/
+    min-height: 133px;
 }
 img{max-width: 100%;}
 
  /* ----------- iPad ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
+/* @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) {
   .carousel-item>img{max-width: 100%;
@@ -113,12 +122,12 @@ and (max-device-width: 1024px) {
       left: 2%;
       bottom: 15%;
   }
-}
+} */
 
 /* ----------- iPad Pro 10.5" ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 834px) 
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -128,12 +137,12 @@ and (max-device-width: 1024px) {
         left: 2%;
         bottom: 15%;
     }
-}
+} */
 
 /* ----------- iPad Pro 12.9" ----------- */
 
 /* Portrait and Landscape */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -143,7 +152,7 @@ and (max-device-width: 1024px) {
         left: 2%;
         bottom: 15%;
     }
-}
+} */
 .subsec{
   cursor:pointer!important;
 }
@@ -162,13 +171,23 @@ and (max-device-width: 1024px) {
     margin: 0px auto;
 }
 .imgCover{
-  position: relative;
+  position: relative!important;
+  /* display: block; */
+  width: 100%!important;
 }
 .imgCover img{
+  min-height: 250px!important;
+  width:100%!important;
+  position: relative;
+  -ms-interpolation-mode: bicubic;
   min-height: 250px;
+/* width: auto !important; */
+/* position: relative; */
+/* -ms-interpolation-mode: bicubic; */
+width: 100%;
 }
 .imgCover>.card-title, .imgCover>.card-title>a{
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   bottom: 0;
   color: #fff;
@@ -181,40 +200,255 @@ and (max-device-width: 1024px) {
 .card-container{
   padding:15px;
 }
- /* ----------- iPad ----------- */
+.reqim, .reqim:hover, .reqim:active {
+  color: #ffffff;
+}
 
-/* Portrait and Landscape */
-/* @media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) {
-  .lobcontainer {
-    min-height: 241px!important;
+@media only screen and (min-width: 768px) and (max-width: 973px) {
+  .carousel-caption>.float-left>h1{
+    font-size: 1.6rem;
   }
-} */
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-/* @media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .lobcontainer {
-      min-height: 241px!important;
+  .carousel-caption>.float-left>h2{
+    font-size: 1.3rem;
   }
-} */
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-/* @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .lobcontainer {
-      min-height: 241px!important;
+  .carousel-caption>.float-left>p{
+    font-size: 14px;font-weight: lighter;
   }
-} */
+
+  .carousel-item .carousel-caption {
+    left: 2%;
+    bottom: 35%;
+}
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+  .navbar-brand{
+    margin-right: 3rem!important;
+  }
+  .marketing .card img {
+    max-width: 25%;
+    margin: 0px 10px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .navbar-brand {
+    margin-right: .7rem !important;
+  }
+  .marketing .card img {
+    max-width: 22%;
+    float: left;
+    margin-top: 3%;
+  }
+}
+
+/*------------iPhones ----------*/
+@media only screen and (max-width: 767px) {
+  #myCarouseldetails{
+    max-height: 75px!important;
+  }
+  #myCarouseldetails>.carousel-inner>.carousel-item>img{
+    max-height: 75px!important;
+  }
+  .details {
+    padding: 10px 5px!important;
+  }
+  .mobileblock>.detailstexts, .mobileblock>span>p:nth-child(even){
+    padding: 0rem;
+    font-size: 11px;
+  }
+  .mobileblock>.detailsdefinition{
+    padding: 0rem;
+    font-size: 11px;
+  }
+  .detailstexts>a{
+    text-decoration: underline;
+    }
+    .mobileblock>.detailssubheading{
+      font-size: 12px;
+      font-weight: bold;
+      border-bottom: 2px solid red;
+      display:inline-block;
+      margin-bottom: 10px;
+    }
+    .mobilehead{
+      margin: 10px 0;
+    }
+    .mobileblock>span>p{
+      margin-top: 0;
+      margin-bottom: .5rem;
+      color: #8F8F8F;
+    }
+    .mobileblock>span>p>a{
+      text-decoration: underline;
+    }
+    .mobileblock>.detailsheading {
+      font-size: 15px;
+      font-weight: 500;
+  }
+  .mobileblock>span>p:nth-child(odd) {
+    color: #8F8F8F;
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .mobileblock>span>.valueprop{
+    font-size: 11px;
+    color: #8F8F8F;
+  }
+    /* .detailstextsvp{
+      padding: 0rem 1.2rem;
+      margin-bottom: 5px;
+      line-height: 1.5rem;
+    } */
+    .reqhelp{
+      padding: 0;
+      margin-bottom: 0;
+      float: right;
+    }
+    .reqhelp>p{
+      line-height: 25px;
+      font-size: 11px;
+    }
+    .reqhelp>.mt-4>img{
+      max-width:15%;
+    }
+    .reqhelp>span>a, .reqhelp>span>a:hover {
+      display: inline-block;
+      color: #000;
+      text-decoration: none;
+      background-color: transparent;
+      vertical-align: text-top;
+      margin-left: 2px;
+  }
+    .valueprop {
+      list-style-type: circle;
+      padding-left: 16px;
+      margin-bottom: 1rem;
+      line-height: 1.5rem;
+  }
+  .carousel-item .carousel-caption {
+    left: 2%;
+    bottom: 0px;
+}
+.marketing {
+  max-width: 900px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  .carousel-item {
+    height: 350px;
+}
+  body{
+    font-size: 12px!important;font-weight: lighter;
+  }
+  .Autonomous-Technology{
+    margin-top: 0px!important;
+  }
+  .lobcontainer,.industrycontainer{
+    min-height: auto!important;
+}
+  #backmm{
+    color: #212529;
+  }
+  .imgCover>.card-title, .imgCover>.card-title>a{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .carousel-item>img{
+    height: 100%;
+  }
+  .carousel-caption>.float-left>h1{
+    font-size: 1.5rem;
+  }
+  .carousel-caption>.float-left>h2{
+    font-size: 1.2rem;
+  }
+  .carousel-caption>.float-left>p{
+    font-size: 12px;font-weight: lighter;
+  }
+  .carouselBtn{
+    /* display:none; */
+    visibility: hidden;
+  }
+  .carousel-item-requesthelp{
+    height: 440px;
+  }
+
+  .navbar-brand>img{
+    max-width: 60%
+  }
+  #autonomousCard>.col-lg-4{
+    margin: 0;
+  }
+  .marketing .card {
+    padding: 0;
+    min-height: auto;
+    flex-direction: row;
+    text-align: left;
+}
+.marketing .card .card-title img {
+  margin: 0 20px;
+  float: unset!important;
+}
+.card-title {
+  margin: 0!important;
+  clear: both;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 86px;
+}
+.reqhelptitle{
+  margin: 0!important;
+  clear: both;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: normal!important;
+  padding: 25px 0!important;
+}
+.reqhelptitle>span{
+  margin: 0!important;
+  clear: both;
+  font-size: 12px;
+  padding: 20px 0;
+}
+.reqhelptitle>span:nth-child(1){
+  font-weight: bold;
+}
+.reqhelptitle>span:nth-child(2){
+  font-weight:normal;
+}
+.marketinghelp{
+  min-height: auto!important;
+}
+.subsec>.row>.imgCover>.card-title {
+  margin: 0!important;
+  clear: both;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 30px;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+  .carouselBtn{
+    display: none;
+  }
+} 
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .lobcontainer{
   min-height: 200px;
@@ -238,7 +472,7 @@ footer{
   background: #324B5C;
   padding:25px;
   color:#99bbcb;
-  bottom: 0;
+bottom: 0px;
 }
 footer a{ 
   color:#99bbcb;
@@ -289,16 +523,13 @@ footer a:hover{
 /* The Modal (background) */
 .modal {
  font-weight:normal;
-  position: fixed !important; /* Stay in place */
-  z-index: 9999 !important; /* Sit on top */
+  position: fixed !important;
+  z-index: 9999 !important;
   left: 0 !important;
   top: 0 !important;
   width: 750px !important;
-  /* width: 1100px !important; */
-  /* width: 60%; Full width */
-  height: 100% !important; /* Full height */
+  height: 100% !important;
   margin: 0 auto !important;
-  /* left: 20%; */
   left: 15% !important;
 }
 
@@ -361,6 +592,7 @@ footer a:hover{
 .detailstable{
   border-collapse: unset;
   padding: 0rem 1rem;
+  line-height: 2rem;
 }
 .detailstable>tbody>tr>td>a{
 text-decoration: underline;
@@ -396,13 +628,7 @@ text-decoration: underline;
   width: 100%;
   border-collapse: collapse;
 }
-/* .demotable>thead>tr>.detailsubheading{
-  border: 0px;
-  border-radius: 5px;
-  width: 100%;
-  border-collapse: unset;
-  color: #CACACA;
-} */
+
 .demotable>tbody>.detailsubheading{
   border: 0px!important;
   border-radius: 5px!important;
@@ -483,3 +709,39 @@ display: inline-block;
   background-color: #000;
   opacity:0.5;
  }
+
+
+  /* ----------- iPad ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+  .lobcontainer {
+    min-height: 241px!important;
+  }
+} */
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .lobcontainer {
+      min-height: 241px!important;
+  }
+} */
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .lobcontainer {
+      min-height: 241px!important;
+  }
+} */
