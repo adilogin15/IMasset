@@ -13,7 +13,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
     <body>
-        <nav class="navbar navbar-expand-md fixed-top">
+        <!-- <nav class="navbar navbar-expand-md fixed-top">
             <a class="navbar-brand d-none  d-md-block d-lg-block d-xl-block" href="index.html">                
                 <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
             </a>
@@ -36,9 +36,33 @@
                     </li>
                 </ul>
             </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="nbs navbar-brand d-none  d-md-block d-lg-block d-xl-block" href="index.html">                
+                <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nbs navbar-brand d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" href="index.html">                
+                <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Solution Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="SolutionWorkshops.html">Solution Workshops <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="RequestHelp.html">Request Help</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    
-        <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel">
+
+        <div id="myCarouselsolworkshop" class="carousel slide pointer-event" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/images/banner2.png" width="100%" />
@@ -55,8 +79,8 @@
         </div>
 
         <div class="homewrapper sdsw"></div>
-        <div class="sdswtablebg"><h4>All First Success Labs require a running Autonomous DB before jumping to a lab.</h4></div>
-        <div className="container maintcContainer">
+        <div class="sdswtablebg d-none d-md-block d-lg-block d-xl-block"><h4>All First Success Labs require a running Autonomous DB before jumping to a lab.</h4></div>
+        <div class="col-sm-12 d-none d-md-block d-lg-block d-xl-block container maintcContainer">
             <div class="tcard">
                 <table>
                     <thead>
@@ -111,8 +135,64 @@
                 </table>
             </div>
         </div>
-
-        <div className="container maintcContainer">
+        <div class='col-sm-12 d-none d-block d-sm-block d-md-none d-lg-none d-xl-none swmobileblock'>
+            <div class='swmobilehead'><span class='swdetailsheading'><strong><p>All First Success Labs require a running Autonomous DB before jumping to a lab.</p></strong></span>
+                <div class='reqhelp'> <span class='mt-4'> <img src='assets/images/informationblack.png' alt='Request Help'> <a href='RequestHelp.html'><p>Request Help</p></a> </span></div>
+            </div>
+            <p class='swdetailssubheading'>Getting Started Workshops&nbsp;</p>
+            <p class='innerheading'><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=README.md" target="_blank">Getting Started with Autonomous Data Warehouse</a>&nbsp;</p><hr>  
+            <p class='innerheading'><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=README.md" target="_blank">Getting Started with Autonomous Transaction Processing</a>&nbsp;</p><hr> 
+            <p class='innerheading'>Using Data Integration Tools with Autonomous Data Warehouse&nbsp;</p><hr>
+            <p class='swdetailssubheading'>First Success Labs to Position with Customers&nbsp;</p>
+            <p class='innerheading'>
+                <ul class='swvalueprop'>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide1.md" target="_blank">Provisioning a New Autonomous Data Warehouse</a></li>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide2.md" target="_blank">Load Free Sample Datasets</a></li>
+                    <span id="dotsli1">...</span>
+                    <span id="moreli1">
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide3.md" target="_blank">Loading custom data into ADW</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide4.md" target="_blank">Querying External Data</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide5.md" target="_blank">Work with DV and ADW</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide6.md" target="_blank">Managing and Monitoring Autonomous Data Warehouse</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide7.md" target="_blank">Scaling and Performance in Autonomous Data Warehouse</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide8.md" target="_blank">Using Oracle Machine Learning SQL Notebooks</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide9.md" target="_blank">Simple Introduction to Machine Learning Algorithms</a></li>
+                    </span>
+                </ul>
+            </p><a onclick="readmore('dotsli1','moreli1','rmli1')" id="rmli1">Read more</a><hr>
+            <p class='innerheading'>
+                <ul class='swvalueprop'>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide500Configurenode.jsAppWithATP.md" target="_blank">Configure node.js app with ATP</a> and <a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide700WorkingWithRESTAPIs.md" target="_blank">Use Node.js with REST APIs</a></li>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide600ConfigureJavaAppWithATP.md" target="_blank">Configure Java with ATP</a></li>
+                    <span id="dotsli2">...</span>
+                    <span id="moreli2">
+                        <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide800BuildingMicroservicesOnATP.md" target="_blank">Building microservices on ATP</a></li>
+                        <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide900ConfigureOCI-CLI.md" target="_blank">Configure OCI-CLI</a></li>
+                    </span>
+                </ul>
+            </p><a onclick="readmore('dotsli2','moreli2','rmli2')" id="rmli2">Read more</a><hr>
+            <p class='innerheading'>
+                <ul class='swvalueprop'>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/journey4-adwc/?page=LabGuide10.md" target="_blank">Using Data Integration Tools with Autonomous Data Warehouse</a></li>
+                    <li><a href="https://github.com/OracleCPS/DIPC/blob/master/CloudWorkshop_DIPC_1000.md" target="_blank">Getting Started with DIPC and ADW (flatfile to AWD)</a></li>
+                    <span id="dotsli3">...</span>
+                    <span id="moreli3">
+                        <li><a href="https://github.com/OracleCPS/DIPC/blob/master/CloudWorkshop_DIPC_800.md" target="_blank">Getting Started with DIPC and ADW (Oracle Database to ADW replication)</a></li>
+                    </span>
+                </ul>
+            </p><a onclick="readmore('dotsli3','moreli3','rmli3')" id="rmli3">Read more</a><hr>
+            <p class='swdetailssubheading'>Overview&nbsp;</p>
+            <p class='detailsdefinition'>The Workshop walks you through all the steps to get started using the Oracle Autonomous Data Warehouse(ADW).
+                <span id="dots">...</span><span id="more">You will provision a new ADW instance, load data from the object store and troubleshoot data loads, query external data residing on the object store, manage an ADW instance, scale and ADW instance, and use Oracle Machine Learning notebooks.</span>
+            </p><a onclick="readmore('dots','more','rm')" id="rm">Read more</a><hr>
+            <p class='detailsdefinition'>This workshop walks you through all the steps to get started using the Oracle Autonomous Transaction Processing (ATP). Provision a database, 
+                <span id="dots1">...</span><span id="more1">scale ATP, load data, configure node.js with ATP, configure Java with ATP, working with REST APIs, building microservices on ATP, Configuring OCI CLI, working with Kubernetes and rapid application development with ATP.</span>
+            </p><a onclick="readmore('dots1','more1','rm1')" id="rm1">Read more</a><hr>
+            <p class='detailsdefinition'>In these labs, you will configure and use Oracle Data Integration Platform Cloud (DIPC) with Autonomous Data Warehouse. This lab follow 
+                <span id="dots2">...</span><span id="more2">a typical enterprise data warehouse reference implementation with ETL/ELT batch processing, real time data replication, and data quality review. You will load data from a flat file and a database table using Oracle Data Integrator (ODI) to your Autonomous Data Warehouse. You will replicate data from a database table to Autonomous Data Warehouse using Oracle Golden Gate (OGG). You will review data quality in your Autonomous Data Warehouse using Oracle Enterprise Data Quality (EDQ).</span>
+            </p><a onclick="readmore('dots2','more2','rm2')" id="rm2">Read more</a><hr>
+        </div>
+        <div class="col-sm-12 d-none d-md-block d-lg-block d-xl-block container maintcContainer">
             <div class="tcard">
                 <table>
                     <thead>
@@ -147,7 +227,29 @@
                 </table>
             </div>
         </div>
-
+        <div class='col-sm-12 d-none d-block d-sm-block d-md-none d-lg-none d-xl-none swmobileblock'>
+            <p class='swdetailssubheading'>Autonomous Solution Workshops&nbsp;</p>
+            <p class='innerheading'><a href="https://oracle.github.io/learning-library/workshops/bike-share-prediction/?page=README.md" target="_blank">Demand Prediction Setup Workshop</a>&nbsp;</p><hr>  
+            <p class='innerheading'><a href="https://oracle.github.io/learning-library/workshops/auto-scale-adwc/?page=README.md" target="_blank">Policy Based Scaling Workshop</a>&nbsp;</p><hr> 
+            <p class='innerheading'><a href="https://oracle.github.io/learning-library/workshops/erp-adw-oac/?page=README.md" target="_blank">SaaS Optimized Reporting Workshop</a>&nbsp;</p><hr>
+            <p class='swdetailssubheading'>First Success Labs to Position with Customers&nbsp;</p>
+            <p class='innerheading'>
+                <ul class='swvalueprop'>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/bike-share-prediction/?page=LabGuide200.md" target="_blank">ML Data Preparation Using SQL Developer</a></li>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/bike-share-prediction/?page=LabGuide300.md" target="_blank">Getting Started with Oracle Analytics Cloud (OAC)</a></li>
+                </ul>
+            </p><hr>
+            <p class='swdetailssubheading'>Overview&nbsp;</p>
+            <p class='detailsdefinition'>This workshop walks you through using the Oracle Autonomous Data Warehouse (ADW)
+                <span id="dots3">...</span><span id="more3"> for storing analytical datasets and applying Machine Learning models to learn the correlation between attributes and predict future demand.<br><br>You will take on 2 personas during the workshop: the Data Scientist prepares the data, validates the machine learning models, and applies those models to predict future demand; the Business Analyst also builds and applies Machine Learning models using Oracle Analytics Cloud service (OAC) without writing a single line of code. During the workshop you will work with Oracle Autonomous Data Warehouse, Oracle Machine Learning tool, and Oracle Analytics Cloud Service.</span>
+            </p><a onclick="readmore('dots3','more3','rm3')" id="rm3">Read more</a><hr>
+            <p class='detailsdefinition'>This workshop walks you through provisioning the Oracle Autonomous Data Warehouse (ADW),
+                <span id="dots4">...</span><span id="more4">creating Database as a Service instance, loading data, monitoring and management of ADW, auto scaling up and down of an ADW instance, and policy setting for ADW scaling.</span>
+            </p><a onclick="readmore('dots4','more4','rm4')" id="rm4">Read more</a><hr>
+            <p class='detailsdefinition'>This workshop walks you through how to utilize Oracle Analytics Cloud (OAC)
+                <span id="dots5">...</span><span id="more5"> to extend analysis of project data from Oracle Enterprise Resource Planning (ERP). You will learn how to pull in curated content using the tight integration between OAC and ERP; blend essential third-party data staged in Autonomous Data Warehouse; perform what-if analysis and apply machine learning to create intuitive visualizations to help business stakeholders make swift and informed decisions.</span>
+            </p><a onclick="readmore('dots5','more5','rm5')" id="rm5">Read more</a><hr>
+        </div>
         <footer class="container-fluid text-center">
            <p class="float-right"><a href="#">Back to top</a></p>
            <p>
@@ -155,6 +257,22 @@
               <div class="col-sm-12"><a href="#">Powered by Oracle Cloud Solution Hubs</a> | &copy; Oracle Solution Engineering | <a href="#">Terms of Use and Privacy</a> | Confidential - Oracle Internal</div>
            </p>
         </footer>
-    
+        <script type="text/javascript">
+        function readmore(d,m,r) {
+            var dots = document.getElementById(d);
+            var moreText = document.getElementById(m);
+            var btnText = document.getElementById(r);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+        </script>
     </body>
 </html>

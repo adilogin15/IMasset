@@ -153,7 +153,7 @@ and (max-device-width: 1024px) {
         bottom: 15%;
     }
 } */
-.subsec{
+.subsec , body>a{
   cursor:pointer!important;
 }
 .marketing .card{
@@ -203,6 +203,11 @@ width: 100%;
 .reqim, .reqim:hover, .reqim:active {
   color: #ffffff;
 }
+.headImage{
+	align-self: flex-start;
+	left:0;
+	padding:0px;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 973px) {
   .carousel-caption>.float-left>h1{
@@ -223,8 +228,14 @@ width: 100%;
 }
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
-  .navbar-brand{
+  .headImage{
+    padding: 0px;
+  }
+  .nbi,.nbr,.nbd,.nbs{
     margin-right: 3rem!important;
+  }
+  .navbar {
+    padding:0px;
   }
   .marketing .card img {
     max-width: 25%;
@@ -233,8 +244,14 @@ width: 100%;
   }
 }
 @media only screen and (max-width: 321px) {
-  .navbar-brand {
-    margin-right: .7rem !important;
+  .navbar {
+  padding:0px;
+}
+.headImage{
+  padding: 0px;
+}
+  .nbi,.nbr,.nbd,.nbs{
+    margin-right: 0rem!important;
   }
   .marketing .card img {
     max-width: 22%;
@@ -243,18 +260,52 @@ width: 100%;
   }
 }
 
+#myCarouselreqhlp>.carousel-inner>.carousel-item.active,#myCarouselreqhlp>.carousel-inner>.carousel-item-prev,.carousel-item-next{
+  display: flex;
+}
+
 /*------------iPhones ----------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  .headImage{
+    padding: 0px;
+  }
+#more,#more1,#more2,#moreli1,#moreli2,#moreli3,#more3,#more4,#more5{
+  display:none;
+}
+#moreli1>li>a,#moreli2>li>a,#moreli3>li>a,#moreli4>li>a,#moreli4>li>a,#moreli5>li>a{
+  color: #449FD1;
+  font-size: 11px;
+  font-weight: 600;
+}
+#rm,#rm1,#rm2,#rmli1,#rmli2,#rmli3,#rm3,#rm4,#rm5{
+  margin-bottom: 1rem;
+    clear: both;
+    float: right;
+    text-decoration: underline;
+    color: #449FD1;
+    font-weight: 600;
+    font-size: 11px;
+}
   #myCarouseldetails{
     max-height: 75px!important;
+  }
+  #myCarouselsolworkshop{
+    max-height: 100px!important;
   }
   #myCarouseldetails>.carousel-inner>.carousel-item>img{
     max-height: 75px!important;
   }
+  #myCarouselsolworkshop>.carousel-inner>.carousel-item>img{
+    max-height: 100px!important;
+  }
   .details {
     padding: 10px 5px!important;
   }
-  .mobileblock>.detailstexts, .mobileblock>span>p:nth-child(even){
+  .swmobileblock>hr{
+    margin-top: 0px;
+    clear: both;
+  }
+  .mobileblock>.detailstexts,.swmobileblock>.detailstexts, .mobileblock>span>p:nth-child(even){
     padding: 0rem;
     font-size: 11px;
   }
@@ -262,6 +313,14 @@ width: 100%;
     padding: 0rem;
     font-size: 11px;
   }
+
+  .swmobileblock>.detailsdefinition{
+  padding: 0rem;
+  font-weight: 600;
+  color: #8F8F8F;
+  font-size: 11px;
+  }
+
   .detailstexts>a{
     text-decoration: underline;
     }
@@ -271,8 +330,24 @@ width: 100%;
       border-bottom: 2px solid red;
       display:inline-block;
       margin-bottom: 10px;
+    }    
+    .swmobileblock>.innerheading>a,.swmobileblock>.innerheading{
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
     }
-    .mobilehead{
+    .swmobileblock>.innerheading>a,.swmobileblock>.innerheading>a:visited, .swmobileblock>.swvalueprop>li>a, .swmobileblock>.swvalueprop>li>a:visited{
+      color: #449FD1;
+      cursor:pointer!important;
+      margin-bottom: 0px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .swmobileblock>.innerheading{
+      color: #8F8F8F;
+      margin-bottom: 10px;
+    }
+    .mobilehead, .swmobilehead{
       margin: 10px 0;
     }
     .mobileblock>span>p{
@@ -283,24 +358,35 @@ width: 100%;
     .mobileblock>span>p>a{
       text-decoration: underline;
     }
-    .mobileblock>.detailsheading {
+    .swmobileblock>.swdetailssubheading{
+      font-size: 12px;
+      font-weight: bold;
+      border-bottom: 2px solid red;
+      display:inline-block;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .mobileblock>.detailsheading{
       font-size: 15px;
       font-weight: 500;
+  }
+  .swmobileblock>.swmobilehead>.swdetailsheading>strong>p{
+  width: 60%;
+  /* font-size: 15px; */
+  font-weight: 500;
+  display: inline-block;
+  font-size: .8rem;
+  word-break: break-word;
   }
   .mobileblock>span>p:nth-child(odd) {
     color: #8F8F8F;
     font-weight: 600;
     font-size: 11px;
   }
-  .mobileblock>span>.valueprop{
+  .mobileblock>span>.valueprop , .swmobileblock>.innerheading.swmobilehead>span>.swvalueprop{
     font-size: 11px;
     color: #8F8F8F;
   }
-    /* .detailstextsvp{
-      padding: 0rem 1.2rem;
-      margin-bottom: 5px;
-      line-height: 1.5rem;
-    } */
     .reqhelp{
       padding: 0;
       margin-bottom: 0;
@@ -326,6 +412,17 @@ width: 100%;
       padding-left: 16px;
       margin-bottom: 1rem;
       line-height: 1.5rem;
+  }
+  .innerheading>.swvalueprop {
+    padding-left: 16px;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+  .swvalueprop>a {
+  text-decoration: none;
+  font-size: 12px;
+  color:#449FD1;
+  font-weight: bold;
   }
   .carousel-item .carousel-caption {
     left: 2%;
@@ -366,10 +463,10 @@ width: 100%;
     height: 100%;
   }
   .carousel-caption>.float-left>h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .carousel-caption>.float-left>h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .carousel-caption>.float-left>p{
     font-size: 12px;font-weight: lighter;
@@ -382,8 +479,8 @@ width: 100%;
     height: 440px;
   }
 
-  .navbar-brand>img{
-    max-width: 60%
+  .nbi>img,.nbr>img,.nbd>img,.nbs>img{
+    max-width: 60%!important;
   }
   #autonomousCard>.col-lg-4{
     margin: 0;

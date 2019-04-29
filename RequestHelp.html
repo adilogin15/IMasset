@@ -14,13 +14,13 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md fixed-top">
-            <a class="navbar-brand d-none  d-md-block d-lg-block d-xl-block" href="index.html">                
+            <a class="nbr navbar-brand d-none d-md-block d-lg-block d-xl-block" href="index.html">                
                 <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" href="index.html">                
+            <a class="nbr navbar-brand d-none d-block d-sm-block d-md-none d-lg-none d-xl-none" href="index.html">                
                 <img src="assets/images/osch.png" class="headImage" alt="Oracle Logo" />
             </a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -64,7 +64,7 @@
                 <div class="col-lg-4">
                     <div class="card d-none d-md-block d-lg-block d-xl-block" id="scrm" onclick="hrefload(this)">
                         <div class="card_img_cover">
-                            <img  src="./assets/images/Icon4.png">
+                            <img src="./assets/images/Icon4.png">
                         </div>
                         <h6 class="mt-2">scrm.oraclecorp.com</h6><p class="mt-0" style="font-size: x-small;">(request IM Platform team support)</p>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="col-lg-4">
                     <div class="card d-none d-md-block d-lg-block d-xl-block" id="mail" onclick="hrefload(this)">
                         <div class="card_img_cover">
-                            <img  src="./assets/images/Icon5.png">
+                            <img src="./assets/images/Icon5.png">
                         </div>
                         <h6 class="mt-2">Mail</h6><p class="mt-0" style="font-size: x-small;">infomng_ww_grp@oracle.com</p>
                     </div>
@@ -125,70 +125,66 @@
         </footer>
     </body>
 </html>
-<script>
-// Opera 8.0+
-var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+<script type="text/javascript">
+	// Opera 8.0+
+	var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
-// Firefox 1.0+
-var isFirefox = typeof InstallTrigger !== 'undefined';
+	// Firefox 1.0+
+	var isFirefox = typeof InstallTrigger !== 'undefined';
 
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+	// Safari 3.0+ "[object HTMLElementConstructor]" 
+	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
 
-// Internet Explorer 6-11
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
+	// Internet Explorer 6-11
+	var isIE = /*@cc_on!@*/false || !!document.documentMode;
 
-// Edge 20+
-var isEdge = !isIE && !!window.StyleMedia;
+	// Edge 20+
+	var isEdge = !isIE && !!window.StyleMedia;
 
-// Chrome 1+
-var isChrome = !!window.chrome && !!window.chrome.webstore;
+	// Chrome 1+
+	var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-// Blink engine detection
-var isBlink = (isChrome || isOpera) && !!window.CSS;
+	// Blink engine detection
+	var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-console.log(isFirefox," ",isSafari," ",isIE," ",isEdge," ",isChrome," ","sdfsdfsdfsdf");
+	console.log(isFirefox," ",isSafari," ",isIE," ",isEdge," ",isChrome," ","sdfsdfsdfsdf");
 
-if((isEdge == true)){
-    $('footer').css('position','absolute');
-}
-if (window.innerWidth <= 699) {
-    $("#autonomousListing").hide();
-    $('footer').css('position','absolute');
-}
-else{
-    $("#autonomousListing").show();
-}
-function hrefload(e)
-{
-    // $(".marketing").hide();
-    if (window.innerWidth <= 699) {
-        if(e.id == "scrmmobile")
-        {
-            window.open('https://apex-fusioncrm.oraclecorp.com/apex/f?p=362:1:118582154691404::NO::P1_ENG_REPORT,P1_REFRESH_NOTIFICATIONS:,YES', '_blank');
-        }
-        else if(e.id == "mailmobile")
-        {
-            location.href = "mailto:infomng_ww_grp@oracle.com";
-        }
-        else if(e.id == "slackmobile")
-        {
-            window.open('https://sales-tech-div.slack.com/', '_blank');
-        } 
-    }
-    else{
-        if(e.id == "scrm")
-        {
-            window.open('https://apex-fusioncrm.oraclecorp.com/apex/f?p=362:1:118582154691404::NO::P1_ENG_REPORT,P1_REFRESH_NOTIFICATIONS:,YES', '_blank');
-        }
-        else if(e.id == "mail")
-        {
-            location.href = "mailto:infomng_ww_grp@oracle.com";
-        }
-        else if(e.id == "slack")
-        {
-            window.open('https://sales-tech-div.slack.com/', '_blank');
-        } 
-    }
-}
+	if (window.innerWidth <= 699) {
+	    $("#autonomousListing").hide();
+	}
+	else{
+	    $("#autonomousListing").show();
+	}
+	function hrefload(e)
+	{
+	    // $(".marketing").hide();
+	    if (window.innerWidth <= 699) {
+	        if(e.id == "scrmmobile")
+	        {
+	            window.open('https://apex-fusioncrm.oraclecorp.com/apex/f?p=362:1:118582154691404::NO::P1_ENG_REPORT,P1_REFRESH_NOTIFICATIONS:,YES', '_blank');
+	        }
+	        else if(e.id == "mailmobile")
+	        {
+	            location.href = "mailto:infomng_ww_grp@oracle.com";
+	        }
+	        else if(e.id == "slackmobile")
+	        {
+	            window.open('https://sales-tech-div.slack.com/', '_blank');
+	        } 
+	    }
+	    else{
+	        if(e.id == "scrm")
+	        {
+	            window.open('https://apex-fusioncrm.oraclecorp.com/apex/f?p=362:1:118582154691404::NO::P1_ENG_REPORT,P1_REFRESH_NOTIFICATIONS:,YES', '_blank');
+	        }
+	        else if(e.id == "mail")
+	        {
+	            location.href = "mailto:infomng_ww_grp@oracle.com";
+	        }
+	        else if(e.id == "slack")
+	        {
+	            window.open('https://sales-tech-div.slack.com/', '_blank');
+	        } 
+	    }
+	}
 </script>
