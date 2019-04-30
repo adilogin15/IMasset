@@ -105,8 +105,8 @@ padding:20px 50px!important;
   margin-bottom: 30px;
 }
 .marketinghelp{
-   /*min-height: 117px;*/
-    min-height: 133px;
+ /*min-height: 117px;min-height: 133px;*/
+ min-height: 158px;
 }
 img{max-width: 100%;}
 
@@ -274,8 +274,10 @@ width: 100%;
 }
 #moreli1>li>a,#moreli2>li>a,#moreli3>li>a,#moreli4>li>a,#moreli4>li>a,#moreli5>li>a{
   color: #449FD1;
+  /* font-size: 11px;
+  font-weight: 600; */
   font-size: 11px;
-  font-weight: 600;
+  font-weight: bold;
 }
 #rm,#rm1,#rm2,#rmli1,#rmli2,#rmli3,#rm3,#rm4,#rm5{
   margin-bottom: 1rem;
@@ -340,7 +342,7 @@ width: 100%;
       color: #449FD1;
       cursor:pointer!important;
       margin-bottom: 0px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: bold;
     }
     .swmobileblock>.innerheading{
