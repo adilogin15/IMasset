@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="RequestHelp.html">Request Help</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Team.html">Meet the Team</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -41,7 +44,7 @@
         <div id="myCarouselsolworkshop" class="carousel slide pointer-event" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/images/banner2.png" width="100%" />
+                    <img id="solworkshopimg" src="./assets/images/banner2.png" width="100%" />
                     <div class="container-fluid">
                         <div class="col-md-12 carousel-caption text-left" style="bottom: 33%;">
                             <div class="col-md-4 float-right carouselBtn">
@@ -138,7 +141,7 @@
             </p><a onclick="readmore('dotsli1','moreli1','rmli1')" id="rmli1">Read more</a><hr>
             <p class='innerheading'>
                 <ul class='swvalueprop'>
-                    <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide500Configurenode.jsAppWithATP.md" target="_blank">Configure node.js app with ATP</a> and <a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide700WorkingWithRESTAPIs.md" target="_blank">Use Node.js with REST APIs</a></li>
+                    <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide500Configurenode.jsAppWithATP.md" target="_blank">Configure node.js app with ATP</a><span id="nolink"> and </span><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide700WorkingWithRESTAPIs.md" target="_blank">Use Node.js with REST APIs</a></li>
                     <li><a href="https://oracle.github.io/learning-library/workshops/autonomous-transaction-processing/?page=LabGuide600ConfigureJavaAppWithATP.md" target="_blank">Configure Java with ATP</a></li>
                     <span id="dotsli2">...</span>
                     <span id="moreli2">
@@ -234,6 +237,10 @@
            </p>
         </footer>
         <script type="text/javascript">
+        if (window.innerWidth <= 699) {
+            $("#solworkshopimg").attr("src","./assets/images/banner2mobile.png");
+            $(".navbar-nav").append("<li class='nav-item extralinks'><a class='nav-link external' href='http://auto.us.oracle.com/cj/' target='_blank'>Cloud Jumpers</a></li><li class='nav-item extralinks'><a class='nav-link external' href='https://oradocs-corp.sites.us2.oraclecloud.com/authsite/adw-natd/index.html'  target='_blank'>Sales Assets</a></li>");
+        }
         function readmore(d,m,r) {
             var dots = document.getElementById(d);
             var moreText = document.getElementById(m);
