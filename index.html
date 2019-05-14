@@ -120,10 +120,10 @@
       </div>
       <button type="button" class="btn btn-link" id="backmm"><img src="./assets/images/chevronback.png">Back</button>
       <div class="container Autonomous-Technology" id="autonomousListing">
-         <h6 class="subsectionheadingautonomous py-2">Autonomous Technology Solution Demos(5)</h6>
+         <h6 class="subsectionheadingautonomous py-2">Autonomous Technology Solution Demos(6)</h6>
          <p>The following Autonomous solution demos and workshops have been developed based on real-world use cases, and have been packaged for you to leverage to drive Autonomous demand, bookings and consumption.  Click on each of the demos for the assets you need to position the solution, and deliver a demo or workshop for your customer.</p>
          <div class="row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-sm-4 mb-4">
                <div class="card subsec" id="saasoprep">
                   <div class="row">
                      <div class="imgCover">
@@ -137,7 +137,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="datamarketplace" >
                   <div class="row">
                      <div class="imgCover">
@@ -151,7 +151,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="departmentalreporting" >
                   <div class="row">
                      <div class="imgCover">
@@ -165,7 +165,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="predictionsandforecasting" >
                   <div class="row">
                      <div class="imgCover">
@@ -179,7 +179,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="ITcostsavings" >
                   <div class="row">
                      <div class="imgCover">
@@ -210,10 +210,10 @@
          </div>
       </div>
       <div class="container Autonomous-Technology lobListing hide" id="lobListing">
-         <h6 class="subsectionheadingautonomous py-2">Line of Business Demos(6)</h6>
+         <h6 class="subsectionheadingautonomous py-2">Line of Business Demos(5)</h6>
          <p>The following demos showcase analytics dashboards and reporting relevant to specific Line of Business managers.</p>
          <div class="row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-sm-4 mb-4">
                <div class="card subsec" id="salesmanager" >
                   <div class="row">
                      <div class="imgCover">
@@ -234,7 +234,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="hrmanager" >
                   <div class="row">
                      <div class="imgCover">
@@ -255,7 +255,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="financemanager" >
                   <div class="row">
                      <div class="imgCover">
@@ -276,7 +276,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="marketingmanager" >
                   <div class="row">
                      <div class="imgCover">
@@ -295,7 +295,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="procurementmanager">
                   <div class="row">
                      <div class="imgCover">
@@ -321,7 +321,7 @@
       <div class="container Autonomous-Technology industryListing hide" id="industryListing">
          <h6 class="subsectionheadingautonomous py-2">Industry Demos(3)</h6>
          <div class="row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-sm-4 mb-4">
                <div class="card subsec" id="financialservices">
                   <div class="row">
                      <div class="imgCover">
@@ -341,7 +341,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="healthcare">
                   <div class="row">
                      <div class="imgCover">
@@ -361,7 +361,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-4  mb-4">
+            <div class="col-sm-4  mb-4">
                <div class="card subsec" id="retail">
                   <div class="row">
                      <div class="imgCover">
@@ -384,7 +384,7 @@
             </div>
          </div>
       </div>
-       <!-- Modal -->
+      <!-- Modal -->
       <div class="modal fade" id="whatsnewModal" tabindex="-1" role="dialog" aria-labelledby="whatsnewModalLabel1" aria-hidden="true">
          <div class="modal-dialog modal-dialog-slideout modal-sm" role="document">
             <div class="modal-content">
@@ -432,9 +432,11 @@
       // Blink engine detection
       var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-      if(isEdge == true){
+      if(isEdge == true)
+      {
          var img = $(".imgCover img");
-         img.each(function() {
+         img.each(function()
+         {
             $( this ).css({height: $( this ).height()});
          });
       }
@@ -443,29 +445,35 @@
       var url_string = window.location.href;
       var url = new URL(url_string);
       var demotype = url.searchParams.get("demotype");
-      if(demotype){
+      if(demotype)
+      {
          $("#"+demotype).trigger('click');
       }
-      if (window.innerWidth <= 699) {
+      if (window.innerWidth <= 767) 
+      {
          $("#autonomousListing").hide();
          $(".navbar-nav").append("<li class='nav-item extralinks'><a class='nav-link external' href='http://auto.us.oracle.com/cj/' target='_blank'>Cloud Jumpers</a></li><li class='nav-item extralinks'><a class='nav-link external' href='https://oradocs-corp.sites.us2.oraclecloud.com/authsite/adw-natd/index.html'  target='_blank'>Sales Assets</a></li><li class='nav-item extralinks btnhighlight'><a class='nav-link external' role='button' data-toggle='modal' data-target='#whatsnewModal'>What's New</a></li>");
-         $('.external').on('click',function () {
-            document.getElementsByClassName("external").remove("active");
+         $('.external').on('click',function () 
+         {
+            // document.getElementsByClassName("external").remove("active");
             $(".navbar-expand-md .navbar-nav .nav-item a:hover").css("border-bottom","0");
          });
       }
-      else{
+      else
+      {
          $("#autonomousListing").show();
          $('.extralinks').remove();
       }
       function tabload(e)
       {
-         if (window.innerWidth<= 699) {
+         if (window.innerWidth<= 767) 
+         {
             $(".marketing").hide();
             $("#backmm").show();
             $("#autonomousListing").hide();
          }
-         else{
+         else
+         {
             $(".marketing").show();
             $("#backmm").hide();
             $("#autonomousListing").show();
@@ -537,9 +545,8 @@
             $("#industryListing").show(); 
          }  
       }
-      $('.subsec').on('click',function () { 
-         
-         // console.log("Details Page Clicked");
+      $('.subsec').on('click',function () 
+      {
          if (typeof window.localStorage !== 'undefined') {         
             localStorage.clear();
             localStorage.setItem("demo", this.id);
@@ -551,14 +558,16 @@
             openTab('Details.html');
          }
       });
-      function openTab(url) {
+      function openTab(url) 
+      {
         var a = window.document.createElement("a");
         a.href = url;
         console.log(a.href);
         console.log(a);
         a.click();
       };
-      $('#backmm').on('click',function () { 
+      $('#backmm').on('click',function () 
+      { 
          $(".marketing").show();
          $("#backmm").hide();
          document.getElementById("autonomousListing").classList.add("hide");
