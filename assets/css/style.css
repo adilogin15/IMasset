@@ -872,3 +872,110 @@ text-decoration: underline;
   background-color: #000;
   opacity:0.5;
  }
+
+ .mainlobContainer{
+  display: flex;
+  height:100%;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 175px;
+  flex-flow: row wrap;
+  margin: 15px;
+}
+
+.lobtcard, .lobtcard2, .lobtcard3 {
+  background-color: #fff;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 5px;
+  margin: 20px auto 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.lobtcard>.table_lob, .lobtcard>.table_video , .lobtcard>.table_demo, .lobtcard>.table_dvd , .lobtcard>.table_demodatasets , .lobtcard>.table_videoscript{
+  width: 16.66%;
+  text-align: center;
+}
+
+.lobtcard2>.table_tr, .lobtcard2>.table_cf , .lobtcard2>.table_gs{
+  width: 33%;
+  text-align: center;
+}
+
+.lobtcard3>.table_LOB, .lobtcard3>.table_cdws , .lobtcard3>.table_dse , .lobtcard3>.table_dvafld{
+  width: 25%;
+  text-align: center;
+}
+
+.lobtcard3 .table_dvafld{
+  max-width: 366px!important;
+  text-align: start!important;
+}
+
+.lobtcard>.table_dvd {
+  width: 20px;
+}
+
+.lobtcard>.table_demodatasets {
+  color: #3b97ff;
+  font-size: 18px;
+}
+
+.lobtcard table, .lobtcard2 table , .lobtcard3 table{
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lobtcard thead, .lobtcard2 thead, .lobtcard3 thead {
+  background: #E8E8E8;
+}
+
+.lobtcard th, .lobtcard2 th , .lobtcard3 th{
+  padding: 10px;
+  text-align: center;
+  border: none;
+  font-weight:400;
+}
+
+.lobtcard tbody tr, .lobtcard2 tbody tr, .lobtcard3 tbody tr {
+  border-bottom: 1px solid #efefef;
+}
+
+.lobtcard tbody>tr>td , .lobtcard2 tbody>tr>td , .lobtcard3 tbody>tr>td {
+  vertical-align:top;
+  text-align: left;
+}
+/* .lobtcard tbody>tr>td:nth-child(1)>a ,.lobtcard tbody>tr>td:nth-child(1):visited , .lobtcard tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard tbody>tr>td:nth-child(2):visited , .lobtcard tbody>tr>td:nth-child(2) , .lobtcard2 tbody>tr>td:nth-child(1)>a ,.lobtcard2 tbody>tr>td:nth-child(1):visited , .lobtcard2 tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard2 tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard2 tbody>tr>td:nth-child(2):visited , .lobtcard2 tbody>tr>td:nth-child(2), .lobtcard3 tbody>tr>td:nth-child(1)>a ,.lobtcard3 tbody>tr>td:nth-child(1):visited , .lobtcard3 tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard3 tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard3 tbody>tr>td:nth-child(2):visited , .lobtcard3 tbody>tr>td:nth-child(2){
+  color:#449FD1;
+  text-decoration: none;
+} */
+.lobtcard tbody>tr>td>a , .lobtcard2 tbody>tr>td>a , .lobtcard3 tbody>tr>td>a , .lobtcard tbody>tr>td>a:visited , .lobtcard2 tbody>tr>td>a:visited , .lobtcard3 tbody>tr>td>a:visited {
+  color:#449FD1;
+  text-decoration: none;
+}
+.lobtcard tbody>tr>td:nth-child(1){
+  font-weight: 500;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.lobtcard2 tbody>tr>td>a, .lobtcard3 tbody>tr>td>a{
+  color:#449FD1;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.lobtcard2 tbody>tr>td, .lobtcard3 tbody>tr>td , .lobtcard3 tbody>tr>td>em{
+  color:#000;
+  padding-left: 30px;
+  text-decoration: none;
+  text-align: start;
+}
+#localtext{
+  font-weight: normal;
+}
+.lobtcard td, .lobtcard2 td, .lobtcard3 td {
+  padding: 15px;
+  border-right: 1px solid #efefef;
+}
