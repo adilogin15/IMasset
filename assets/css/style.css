@@ -883,6 +883,9 @@ text-decoration: underline;
   margin: 15px;
 }
 
+.subheadinglob,.subheadinglobtext{
+  padding-left: 15px;
+}
 .lobtcard, .lobtcard2, .lobtcard3 {
   background-color: #fff;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
@@ -891,6 +894,7 @@ text-decoration: underline;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  text-align:center;
 }
 
 .lobtcard>.table_lob, .lobtcard>.table_video , .lobtcard>.table_demo, .lobtcard>.table_dvd , .lobtcard>.table_demodatasets , .lobtcard>.table_videoscript{
@@ -910,7 +914,7 @@ text-decoration: underline;
 
 .lobtcard3 .table_dvafld{
   max-width: 366px!important;
-  text-align: start!important;
+  /* text-align: start!important; */
 }
 
 .lobtcard>.table_dvd {
@@ -946,12 +950,8 @@ text-decoration: underline;
 
 .lobtcard tbody>tr>td , .lobtcard2 tbody>tr>td , .lobtcard3 tbody>tr>td {
   vertical-align:top;
-  text-align: left;
+  text-align: center;
 }
-/* .lobtcard tbody>tr>td:nth-child(1)>a ,.lobtcard tbody>tr>td:nth-child(1):visited , .lobtcard tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard tbody>tr>td:nth-child(2):visited , .lobtcard tbody>tr>td:nth-child(2) , .lobtcard2 tbody>tr>td:nth-child(1)>a ,.lobtcard2 tbody>tr>td:nth-child(1):visited , .lobtcard2 tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard2 tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard2 tbody>tr>td:nth-child(2):visited , .lobtcard2 tbody>tr>td:nth-child(2), .lobtcard3 tbody>tr>td:nth-child(1)>a ,.lobtcard3 tbody>tr>td:nth-child(1):visited , .lobtcard3 tbody>tr>td:nth-child(2)>ul>li>a, .lobtcard3 tbody>tr>td:nth-child(2)>ul>li>a:visited, .lobtcard3 tbody>tr>td:nth-child(2):visited , .lobtcard3 tbody>tr>td:nth-child(2){
-  color:#449FD1;
-  text-decoration: none;
-} */
 .lobtcard tbody>tr>td>a , .lobtcard2 tbody>tr>td>a , .lobtcard3 tbody>tr>td>a , .lobtcard tbody>tr>td>a:visited , .lobtcard2 tbody>tr>td>a:visited , .lobtcard3 tbody>tr>td>a:visited {
   color:#449FD1;
   text-decoration: none;
@@ -960,17 +960,19 @@ text-decoration: underline;
   font-weight: 500;
   padding-left: 30px;
   text-decoration: none;
+  text-align: center;
 }
 .lobtcard2 tbody>tr>td>a, .lobtcard3 tbody>tr>td>a{
   color:#449FD1;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   text-decoration: none;
+  text-align: center;
 }
 .lobtcard2 tbody>tr>td, .lobtcard3 tbody>tr>td , .lobtcard3 tbody>tr>td>em{
   color:#000;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   text-decoration: none;
-  text-align: start;
+  text-align: center;
 }
 #localtext{
   font-weight: normal;
@@ -978,4 +980,30 @@ text-decoration: underline;
 .lobtcard td, .lobtcard2 td, .lobtcard3 td {
   padding: 15px;
   border-right: 1px solid #efefef;
+}
+.deprepo>img{
+  float: left;
+  width: 16px;
+}
+.deprepo>a{
+  text-decoration: underline;
+}
+.deprepo>a>p{
+  line-height: 15px;
+  margin-left: 20px;
+}
+#depreport{
+  float: none;
+}
+#depreport>span>a{
+  text-decoration: underline;
+  color: #007bff;
+}
+#depreport>span>a:hover{
+  text-decoration: underline;
+  color: #0056b3;
+}
+#depreport>span>a>p{
+  line-height: 15px;
+  margin-left: 20px;
 }
